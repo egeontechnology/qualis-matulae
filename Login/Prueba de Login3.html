@@ -1,0 +1,165 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Title Page -->  
+    <title>Login</title>
+        <style>
+/*Estilos del header*/
+            .contenedor{
+                background-color:#1ab2ff;
+                padding: 15px 10px;
+                margin: 15px;
+                display: flex;
+                height: auto;
+            }
+            #Logo{
+                margin-right: 25%;
+
+            }
+/*Estilo de caja Ipeepee*/
+            #IPeePee{
+                position: relative;
+                float: center;
+                margin:0 25px 0 5px;
+                width: 50%;     
+            }
+
+            /*Estilo letras de Ipeepee*/
+            h1{
+                letter-spacing: 10px;
+                text-shadow: 5px 4px blue;
+                color:white;
+                font-size: 50px;
+                font-family:Arial;
+
+            }
+/*Registro*/
+            #Registro{
+                position: relative;
+                float:right;
+                color:white;
+                height: auto;
+                margin:0 5px 0 5px;
+                border-radius: 4px;
+                background-color:#3399ff;
+                font-size: 10px;
+            }    
+/*Login*/
+            #Login{
+                position: relative;
+                float: right;
+                height:auto;
+                color:white;
+                text-align:right;
+                margin: 0 5px 0 5px;
+                border-radius:4px;
+                background-color:#3399ff;
+                font-size: 10px;
+            }
+/*Buscador*/
+
+            input {
+                 margin-right: 10px;
+            }
+
+            input:invalid ~ span:after {
+                content: '✖';
+                padding-left: 5px;
+                position: absolute:
+            }
+
+            input:valid ~ span:after {
+                content: '✓';
+                padding-left: 5px;
+                position: absolute:
+            }   
+ /*Galeria*/
+            #galeria {
+                position: absolute;
+                float:center;
+                margin: auto;
+                width:50%;
+                height:auto;
+                max-width:150px;
+            }
+/*---------------------------------*/
+
+        </style>
+ 
+<!-- CSS -->
+</head>
+<body>
+<!--Cabecera para login-->
+    <header>
+<!--Contenedor Usuario (registro, login, menu idioma)-->
+        <div class="contenedor">
+<!--Logo corporativo-->
+        <img id="Logo" border="1" src="http://planoinformativo.com/stock12/image/papel-de-bano.jpg" style="width:74px;height:auto;">
+<!--Nombre de la pagina-->
+        <h1 id="IPeePee">IPeePee</h1>
+<!--Registro-->
+        <button type="submit" id="Registro">
+        <a href="#">
+                        <i id="Registro">Registro</i>
+        </button>
+
+<!--Login-->
+        <button id="login">
+           <a href="#" type="submit">
+                        <i id="Login">Login</i>
+        </button>
+     
+<!--Menu deslizante-->
+        
+    </header>
+
+<!--buscador en HTML -->
+
+    <form id="busca">
+        <div>
+        <input type="search" id="mySearch" name="q">
+        <button>Buscar</button>
+        <span class="validity"></span>
+        </div>
+    </form>
+    
+    <p></p>
+
+    <form>
+  <div>
+    <input type="search" id="mySearch" name="q"
+    placeholder="Search the site..." size="30">
+    <button>Search</button>
+    <span class="valid"></span>
+  </div>
+    
+    <p></p>
+    <form>
+  <div>
+    <label for="mySearch">Search for product by ID:</label>
+    <input type="search" id="mySearch" name="q"
+    placeholder="usa 5(letras) y 4(numeros)" required
+    size="30" pattern="[A-z]{5}[0-9]{4}">
+    <button>Search</button>
+    <span class="validity"></span>
+  </div>
+</form>
+
+<!--Galeria de imagenes -->
+    <section id="galeria">
+
+    <article>
+        <a href="https://www.campusmvp.es/catalogo/Product-Desarrollo-de-aplicaciones-web-con-Angular-7_232.aspx" target="_blank">
+        <figure>
+        <img src="playa.jpg"/> <figcaption>Curso online de Angular</figcaption>
+        </figure>
+        </a>
+    </article>
+
+<!-- [...] Aquí se irían repitiendo más elementos <article> con cursos-->
+
+    </section>
+
+</body>
+</html>
