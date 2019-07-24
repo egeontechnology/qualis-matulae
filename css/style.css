@@ -231,7 +231,7 @@ p {
   font-size: 18px;
   padding: 17px;
   width: 27%;
-  background: #ff3a6d;
+  background: #eab924;
   color: #ffffff;
   border: none;
   border-top-right-radius: 3px;
@@ -286,7 +286,7 @@ p {
       content: "";
       width: 60px;
       height: 3px;
-      background: #ff3a6d;
+      background: #eab924;
       bottom: 0;
       left: 50%;
       -webkit-transform: translateX(-50%);
@@ -417,7 +417,7 @@ p {
     .featured-btn-wrap {
       margin: 3px 0 0; } }
   .featured-btn-wrap .btn-danger {
-    background: #ff3a6d;
+    background: #eab924;
     padding: 16px 50px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -427,7 +427,7 @@ p {
       .featured-btn-wrap .btn-danger {
         width: 100%; } }
     .featured-btn-wrap .btn-danger:hover, .featured-btn-wrap .btn-danger:focus {
-      background: #f34e79;
+      background: #dda31d;
       outline: none;
       -webkit-box-shadow: none;
       box-shadow: none; }
@@ -455,7 +455,7 @@ p {
   text-decoration: none; }
 
 .category-wrap:hover .category-block {
-  background: #f34e79;
+  background: #dda31d;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s; }
@@ -684,11 +684,11 @@ footer {
     font-size: 13px;
     margin-top: 3px; }
   .review-btn .btn-outline-danger {
-    color: #ff3a6d;
-    border-color: #ff3a6d; }
+    color: #eab924;
+    border-color: #eab924; }
     .review-btn .btn-outline-danger:hover {
       color: #fff;
-      background: #ff3a6d; }
+      background: #eab924; }
 
 .reserve-btn {
   display: inline-block;
@@ -874,12 +874,12 @@ footer {
   display: block;
   padding: 16px;
   margin: 12px 16px;
-  border: 2px solid #ff3a6d;
-  color: #ff3a6d;
+  border: 2px solid #eab924;
+  color: #eab924;
   font-weight: 400; }
   .btn-contact:hover {
-    background: #ff3a6d;
-    border: 2px solid #ff3a6d; }
+    background: #eab924;
+    border: 2px solid #eab924; }
 
 .follow {
   background: #fff; }
@@ -913,7 +913,7 @@ footer {
       .follow ul li h6 {
         margin: 0; }
   .follow a {
-    color: #ff3a6d;
+    color: #eab924;
     text-align: center;
     display: block;
     font-size: 14px;
