@@ -157,11 +157,11 @@ p {
 
 .slider {
   background: #252a33;
-  background-size: cover;
-  min-height: 800px; }
-  @media (max-width: 992px) {
+  /*background-size: cover;*/
+  min-height: 350px; }
+  @media (max-width: 400px) {
     .slider {
-      min-height: 700px; } }
+      min-height: 300px; } }
 
 .btn-outline-light {
   padding: 10px 16px; }

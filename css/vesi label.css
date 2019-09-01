@@ -27,7 +27,7 @@
   height: 50px;
   line-height: 50px;
   transition: all 0.2s;
-  border-radius: 1rem; }
+  border-radius:0.25rem; }
   .toggle-button--vesi label:before, .toggle-button--vesi label:after {
     position: absolute;
     right: 1.5rem;
