@@ -53,6 +53,7 @@
 .toggle-button--vesi input[type=checkbox]:checked ~ label {
   width: 170px;
   color: #eab924;
+  /*background: #eab924;  si se quiere poner el fondo amarillo cuando se seleccione el boton, entonces se quita la propiedad de color*/
   border-color: #eab924; }
   .toggle-button--vesi input[type=checkbox]:checked ~ label:before {
     opacity: 1;
