@@ -5,7 +5,7 @@
 .toggle-button {
   position: relative;
   display: inline-block;
-  color: #fff; }
+  border-radius: 3px; }
   .toggle-button label {
     display: inline-block;
     text-transform: uppercase;
@@ -26,6 +26,7 @@
 .toggle-button--vesi label {
   height: 50px;
   line-height: 50px;
+  border: 1px solid transparent;
   transition: all 0.2s;
   border-radius:0.25rem; }
   .toggle-button--vesi label:before, .toggle-button--vesi label:after {
@@ -39,7 +40,9 @@
 
 .toggle-button--vesi input[type=checkbox] + label {
   width: 170px;
-  background: #FF5335; }
+  color: #fff;
+  border-color: #eab924; }
+    
   .toggle-button--vesi input[type=checkbox] + label:before {
     opacity: 0;
     transform: translate(0, 20px); }
@@ -49,7 +52,8 @@
 
 .toggle-button--vesi input[type=checkbox]:checked ~ label {
   width: 170px;
-  background: #61B136; }
+  color: #eab924;
+  border-color: #eab924; }
   .toggle-button--vesi input[type=checkbox]:checked ~ label:before {
     opacity: 1;
     transform: translate(0, 0); }
