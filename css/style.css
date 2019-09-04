@@ -986,6 +986,7 @@ footer {
   border: 1px solid #888;
   width: 40%;
   padding-bottom: 30px;
+  padding: auto 3% 7% 3%;
 }
 
 .close {
@@ -997,6 +998,11 @@ footer {
 .close:hover,.close:focus {
   color: red;
   cursor: pointer;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
