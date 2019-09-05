@@ -53,7 +53,7 @@
                 </div>
 
                 <div><span>Introduce contraseña</span><br>
-                <input type="password" id="RPass"  placeholder="debe contener 1 mayuscula, 1 minusculta y 1 caracter especial"onkeyup="Pass()"><br>
+                <input type="password" id="RPass"  placeholder="debe contener 1 mayuscula, 1 minusculta y 1 caracter especial" onkeyup="Pass()" onchange="VerPass()"><br>
                 </div>
 
                 <div><span>Repite contraseña</span><br>
@@ -158,12 +158,9 @@
 
 
                 if( M1 == M2)
-                    document.getElementById("Verifica").innerHTML= "OK";
-                
-                else if(M1 != M2){
-                    document.getElementById("Verifica").innterHTML="Contraseñas no coinciden";  
-                }
-                else{
+                    document.getElementById("Verifica").innerHTML= "OK";        
+                else {
+                    document.getElementById("Verifica").innerHTML="Contraseñas no coinciden";  
                 }
             
             }
