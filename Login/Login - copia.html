@@ -8,8 +8,35 @@
 
  
   <body>
-    <h2> Registro</h2>
-        <div>
+
+        <style>
+                .titulo_boton {
+                    float:left; 
+                    padding:5px;  
+                    background-color:#66b3ff;
+                    width:100px;
+                    font-family:helvetica;
+                    font-size:16px;
+                    font-weight:bold;
+            }
+                .boton_mostrar {
+                    float:right;
+                    font-size:25px;
+                    line-height:20px;
+                    color:#001a33;
+            }
+        </style>
+
+    <div class="titulo_boton">
+        
+      <a style='cursor: pointer;' onClick="muestra_oculta('contenido')" title="" class="boton_mostrar">Registro</a>
+    </div>
+
+    <div id="ForRegistro">
+    <br>
+    <br>
+        <div id="contenido">
+
             <form name="formul">
                 <div><span> Nombre de usuario</span><br>
                 <input type="text" id="RNombre" placeholder="introduce tu nombre" onkeyup="Name()"><br>
@@ -18,16 +45,21 @@
                 <div><span>Correo electronico</span><br>
                 <input type="text" id="RCorreo" placeholder="Introduce tu correro" onkeyup="Email()"><br>
                 </div>
-                </div><span>Fecha de nacimiento</span>
+
+                <div><span>Fecha de nacimiento</span>
                 <div>
+
                 <input type="text" id="RCumple" placeholder="formato XX/XX/XXXX" onkeyup="Cumple()"><br>
                 </div>
+
                 <div><span>Introduce contraseña</span><br>
                 <input type="password" id="RPass"  placeholder="debe contener 1 mayuscula, 1 minusculta y 1 caracter especial"onkeyup="Pass()"><br>
                 </div>
+
                 <div><span>Repite contraseña</span><br>
                 <input type="password" id="CRPass" placeholder="ambas contraseñas deben coincidir" onkeyup="VerPass()"><br>
                 </div>
+
                 <div> <span> Aceptación de terminos de uso y servicio</span><br>
                 <input type="radio" name="UsoServico" value="si"> Si<br>
                 <input type="radio" name="UsoServico" id="Nos" onclick="UsoCondicion()"value="no"> No
@@ -44,8 +76,20 @@
             <div id="Verifica"></div>
             <div id="Cumple"></div>
         </div>
-
+    </div>
        <script>
+
+
+        // funcion para el pop up
+        function muestra_oculta(id){
+        if (document.getElementById){ //se obtiene el id
+        var el = document.getElementById(id); //se define la variable "el" igual a nuestro div
+        el.style.display = (el.style.display == 'none') ? 'block' : 'none'; //damos un atributo display:none que oculta el div
+        }
+        }
+        window.onload = function(){/*hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
+        muestra_oculta('contenido');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
+}
 
         //funcion de aceptacion de uso y condicones
             function UsoCondicion(){
@@ -141,5 +185,6 @@
         
         </script>
         
+      
   </body>
 </html>
