@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Tags CSS - Raquel -->
     <link rel="stylesheet" href="css/vesi label.css">
-    <!--boton mas baño-->
+    <!--Boton añadir baño-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
@@ -40,47 +40,33 @@
                     <div class="col-md-12">
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <a class="navbar-brand" href="inicio.html"><img src="images/logoipeepee.png" class="img-fluid" alt="ipeepee" /></a>
-                            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="fa fa-user fa-2x" style="color:ivory"></span>
-                            </button>  -->
-                            <!-- <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> -->
-                                <div class="navbar" >
-                                    <!-- <li class="nav-item dropdown">
-                                        <!-- <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                 
-                                    </a>                      --> -->
-                                    
-                                    <!-- <li class="nav-item"></li> -->
-                                         <!-- Boton de Login -->
-                                         <i onclick="document.getElementById('modal-wrapper').style.display='block'"class="fa fa-user fa-2x" style="color:ivory"></i>
-                                    
-                                         <div id="modal-wrapper" class="modal">
-                                           <form class="modal-content animate" action="/action_page.php">
-                                            <div class="imgcontainer">
-                                                <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp" style="font-size: 40px">&times;</span>
-                                                <h4 style="text-align:center">ENTRAR</h4>
-                                            </div>
-                                            <div class="container" style="margin-left: 5%">
-                                                <i class="fa fa-user fa-lg"></i><input type="text" placeholder="Nombre" name="uname"><br>
-                                                <i class="fa fa-lock fa-lg"></i> <input type="password" placeholder="Contraseña" name="psw"> <br>       
-                                               <button type="submit">Entrar<nav></nav></button><br><br> 
-                                               <a href="Login/Login - copia.html" style="text-decoration:none; text-align:center !important;">Regístrate</a><br><br>
-                                               <input type="checkbox"> Recuérdame     
-                                               <a href="#" style="text-decoration:none; float:right; margin-right:10%;">¿ Olvidaste tu contraseña ?</a>
-                                             </div>
-                                           </form>
-                                         </div>
-                                         <!-- Funcion que hace que si el usuario clicka fuera del popup, se cierre  -->
-                                         <script>
+                            <i onclick="document.getElementById('modal-wrapper').style.display='block'"class="fa fa-user fa-2x" style="color:ivory"></i>
+                            <!-- El popup-->
+                            <div id="modal-wrapper" class="modal">
+                                <form class="modal-content animate" action="/action_page.php">
+                                    <div class="imgcontainer">
+                                        <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp" style="font-size: 40px">&times;</span>
+                                        <h4 style="text-align:center">ENTRAR</h4>
+                                    </div>
+                                    <div class="container" style="margin-left: 5%">
+                                        <i class="fa fa-user fa-lg"></i><input type="text" placeholder="Nombre" name="uname"><br>
+                                        <i class="fa fa-lock fa-lg"></i> <input type="password" placeholder="Contraseña" name="psw"> <br>       
+                                        <button type="submit">Entrar<nav></nav></button><br><br> 
+                                        <a href="Login/Login - copia.html" style="text-decoration:none; text-align:center !important;">Regístrate</a><br><br>
+                                        <input type="checkbox"> Recuérdame     
+                                        <a href="#" style="text-decoration:none; float:right; margin-right:10%;">¿ Olvidaste tu contraseña ?</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Funcion que hace que si el usuario clicka fuera del popup, se cierre  -->
+                            <script>
                                           var modal = document.getElementById('modal-wrapper');
                                          window.onclick = function(event) {
                                              if (event.target == modal) {
                                                  modal.style.display = "none";
                                              }
                                          }
-                                         </script>
-                                </div>
-                            
-                            </div>
+                            </script>
                         </nav>
                     </div>
                 </div>
@@ -89,11 +75,10 @@
     </div>
     <!-- BOTON AÑADIR BAÑO -->
     <button class="mdc-fab app-fab--absolute" aria-label="Favorite">
-            <span class="mdc-fab__icon material-icons">favorite</span>
+        <span class="mdc-fab__icon material-icons">favorite</span>
     </button>
     <!-- SLIDER -->
     <section class="slider d-flex align-items-center">
-        <!-- <img src="images/slider.jpg" class="img-fluid" alt="#"> -->
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-12">
