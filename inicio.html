@@ -74,9 +74,70 @@
         </div>
     </div>
     <!-- BOTON AÑADIR BAÑO -->
+    <style>
+    .mdc-fab.mdc-ripple-upgraded {
+    --mdc-ripple-fg-opacity: 0.24;
+    }
+    .mdc-fab:not(.mdc-fab--extended) {
+    border-radius: 50%;
+    }
+    .mdc-fab {
+    background-color: var(--mdc-theme-secondary,#018786);
+    }
+    .mdc-fab {
+    -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    border: none;
+    fill: currentColor;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    overflow: hidden;
+    -webkit-transition: opacity 15ms linear 30ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
+    transition: opacity 15ms linear 30ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
+    -o-transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s 0ms cubic-bezier(0,0,.2,1);
+    transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms;
+    transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
+    background-color: #018786;
+    color: #fff;
+    color: var(--mdc-theme-on-secondary,#fff);
+    }
+    .app-fab--absolute {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 999;
+    }
+
+    @media(min-width: 1024px) {
+        .app-fab--absolute {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        }
+    }
+    </style>
+    
     <button class="mdc-fab app-fab--absolute" aria-label="Favorite">
         <span class="mdc-fab__icon material-icons">favorite</span>
-    </button>
+    </button>  
+
     <!-- SLIDER -->
     <section class="slider d-flex align-items-center">
         <div class="container">
@@ -139,98 +200,7 @@
     </section>
     <!--// SLIDER -->
     <!--//END HEADER -->
-    <!--============================= FIND PLACES =============================-->
-    <!-- <section class="main-block">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-5">
-                    <div class="styled-heading">
-                        <h3>What do you need to find?</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="find-place-img_wrap">
-                        <div class="grid">
-                            <figure class="effect-ruby">
-                                <img src="images/find-place1.jpg" class="img-fluid" alt="img13" />
-                                <figcaption>
-                                    <h5>Nightlife </h5>
-                                    <p>385 Listings</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="row find-img-align">
-                        <div class="col-md-12">
-                            <div class="find-place-img_wrap">
-                                <div class="grid">
-                                    <figure class="effect-ruby">
-                                        <img src="images/find-place2.jpg" class="img-fluid" alt="img13" />
-                                        <figcaption>
-                                            <h5>Restaurants</h5>
-                                            <p>210 Listings</p>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="find-place-img_wrap">
-                                <div class="grid">
-                                    <figure class="effect-ruby">
-                                        <img src="images/find-place3.jpg" class="img-fluid" alt="img13" />
-                                        <figcaption>
-                                            <h5>Outdoors </h5>
-                                            <p>114 Listings</p>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="row find-img-align">
-                        <div class="col-md-12">
-                            <div class="find-place-img_wrap">
-                                <div class="grid">
-                                    <figure class="effect-ruby">
-                                        <img src="images/find-place4.jpg" class="img-fluid" alt="img13" />
-                                        <figcaption>
-                                            <h5>Hotels </h5>
-                                            <p>577 Listings</p>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="find-place-img_wrap">
-                                <div class="grid">
-                                    <figure class="effect-ruby">
-                                        <img src="images/find-place5.jpg" class="img-fluid" alt="img13" />
-                                        <figcaption>
-                                            <h5>Art & Culture </h5>
-                                            <p>79 Listings</p>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!--//END FIND PLACES -->
+    
     <!--============================= MEJORES BAÑOS =============================-->
     <section class="main-block light-bg">
         <div class="container">
