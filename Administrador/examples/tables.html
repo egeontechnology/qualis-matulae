@@ -58,13 +58,19 @@
           <li class="nav-item ">
             <a class="nav-link" href="./user.html">
               <i class="material-icons">person</i>
-              <p>User Profile</p>
+              <p>Perfil</p>
             </a>
           </li>
-          <li class="nav-item active ">
+          <li class="nav-item ">
             <a class="nav-link" href="./tables.html">
-              <i class="material-icons">content_paste</i>
-              <p>Table List</p>
+              <i class="material-icons">supervisor_account</i>
+              <p>Lista usuarios</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./admins.html">
+              <i class="material-icons">supervised_user_circle</i>
+              <p>Lista administradores</p>
             </a>
           </li>
           <li class="nav-item ">
@@ -111,7 +117,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="#pablo">Table List</a>
+            <a class="navbar-brand" href="#pablo">Usuarios registrados</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -173,140 +179,26 @@
         </div>
       </nav>
       <!-- End Navbar -->
-      <div class="content">
+      <!-- OTRO ESTILO DE TABLA
+        <div class="content">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title ">Simple Table</h4>
-                  <p class="card-category"> Here is a subtitle for this table</p>
+                  <h4 class="card-title ">iPeePeears</h4>
+                  <p class="card-category"> Base de datos de los usuarios</p>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
                     <table class="table">
-                      <thead class=" text-primary">
-                        <th>
-                          ID
-                        </th>
-                        <th>
-                          Name
-                        </th>
-                        <th>
-                          Country
-                        </th>
-                        <th>
-                          City
-                        </th>
-                        <th>
-                          Salary
-                        </th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            1
-                          </td>
-                          <td>
-                            Dakota Rice
-                          </td>
-                          <td>
-                            Niger
-                          </td>
-                          <td>
-                            Oud-Turnhout
-                          </td>
-                          <td class="text-primary">
-                            $36,738
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            2
-                          </td>
-                          <td>
-                            Minerva Hooper
-                          </td>
-                          <td>
-                            Curaçao
-                          </td>
-                          <td>
-                            Sinaai-Waas
-                          </td>
-                          <td class="text-primary">
-                            $23,789
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            3
-                          </td>
-                          <td>
-                            Sage Rodriguez
-                          </td>
-                          <td>
-                            Netherlands
-                          </td>
-                          <td>
-                            Baileux
-                          </td>
-                          <td class="text-primary">
-                            $56,142
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            4
-                          </td>
-                          <td>
-                            Philip Chaney
-                          </td>
-                          <td>
-                            Korea, South
-                          </td>
-                          <td>
-                            Overland Park
-                          </td>
-                          <td class="text-primary">
-                            $38,735
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            5
-                          </td>
-                          <td>
-                            Doris Greene
-                          </td>
-                          <td>
-                            Malawi
-                          </td>
-                          <td>
-                            Feldkirchen in Kärnten
-                          </td>
-                          <td class="text-primary">
-                            $63,542
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            6
-                          </td>
-                          <td>
-                            Mason Porter
-                          </td>
-                          <td>
-                            Chile
-                          </td>
-                          <td>
-                            Gloucester
-                          </td>
-                          <td class="text-primary">
-                            $78,615
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                      <thead class=" text-primary"> -->
+        <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                
                   </div>
                 </div>
               </div>
@@ -314,27 +206,42 @@
             <div class="col-md-12">
               <div class="card card-plain">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title mt-0"> Table on Plain Background</h4>
-                  <p class="card-category"> Here is a subtitle for this table</p>
+                  <h4 class="card-title mt-0"> Administradores</h4>
+                  <p class="card-category"> Base de datos de los admin</p>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
                     <table class="table table-hover">
-                      <thead class="">
+                        <thead class=" text-primary">
                         <th>
                           ID
                         </th>
                         <th>
-                          Name
+                          Nombre
                         </th>
                         <th>
-                          Country
+                          Apellidos
                         </th>
                         <th>
-                          City
+                          Nombre de usuario
                         </th>
                         <th>
-                          Salary
+                          Email
+                        </th>
+                        <th>
+                          Publicaciones
+                        </th>
+                        <th>
+                          Ciudad
+                        </th>
+                        <th>
+                          Editar
+                        </th>
+                        <th>
+                          Bloquear
+                        </th>
+                        <th>
+                          Eliminar
                         </th>
                       </thead>
                       <tbody>
@@ -343,33 +250,71 @@
                             1
                           </td>
                           <td>
-                            Dakota Rice
+                            Elena 
                           </td>
                           <td>
-                            Niger
+                            Santos
                           </td>
                           <td>
-                            Oud-Turnhout
+                            Helen12
                           </td>
                           <td>
-                            $36,738
+                           Helen12@gmail.com
                           </td>
+                          <td>6</td>
+                          <td>
+                            Salamanca
+                          </td>
+                          <td>
+                            <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
+                              <i class="material-icons">edit</i>
+                            </button> 
+                        </td>
+                        <td>
+                          <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
+                            <i class="material-icons">block</i>
+                          </button>
+                      </td>
+                        <td>
+                            <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                              <i class="material-icons">close</i>
+                            </button>
+                        </td>
                         </tr>
                         <tr>
                           <td>
                             2
                           </td>
                           <td>
-                            Minerva Hooper
+                            Lucía
                           </td>
                           <td>
-                            Curaçao
+                            Martínez
                           </td>
                           <td>
-                            Sinaai-Waas
+                            Luluu
                           </td>
                           <td>
-                            $23,789
+                          luluu@gmail.com
+                          </td>
+                          <td>0</td>
+                          <td>
+                            Móstoles
+                          </td>
+                          <td>
+                              <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button> 
+                          </td>
+                          <td>
+                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
+                              <i class="material-icons">block</i>
+                            </button>
+                        </td>
+                          <td>
+                              <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
                           </td>
                         </tr>
                         <tr>
@@ -377,16 +322,35 @@
                             3
                           </td>
                           <td>
-                            Sage Rodriguez
+                            Carlos
                           </td>
                           <td>
-                            Netherlands
+                            Cantero
                           </td>
                           <td>
-                            Baileux
+                            Charliee2
                           </td>
                           <td>
-                            $56,142
+                          Charliee12@gmail.com
+                          </td>
+                          <td>2</td>
+                          <td>
+                            Tarragona
+                          </td>
+                          <td>
+                              <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button> 
+                          </td>
+                          <td>
+                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
+                              <i class="material-icons">block</i>
+                            </button>
+                        </td>
+                          <td>
+                              <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
                           </td>
                         </tr>
                         <tr>
@@ -394,16 +358,35 @@
                             4
                           </td>
                           <td>
-                            Philip Chaney
+                            Andrés
                           </td>
                           <td>
-                            Korea, South
+                            Carmona
                           </td>
                           <td>
-                            Overland Park
+                            andca56
                           </td>
                           <td>
-                            $38,735
+                          andca56@hotmail.com
+                          </td>
+                          <td>0</td>
+                          <td>
+                            León
+                          </td>
+                          <td>
+                              <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button> 
+                          </td>
+                          <td>
+                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
+                              <i class="material-icons">block</i>
+                            </button>
+                        </td>
+                          <td>
+                              <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
                           </td>
                         </tr>
                         <tr>
@@ -411,16 +394,205 @@
                             5
                           </td>
                           <td>
-                            Doris Greene
+                            Carolina
+                          </td>
+                          <td>
+                            Reales
+                          </td>
+                          <td>
+                            Karool
+                          </td>
+                          <td>
+                          karool@gmail.com
+                          </td>
+                          <td>1</td>
+                          <td>
+                            Elche
+                          </td>
+                          <td>
+                              <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button> 
+                          </td>
+                          <td>
+                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
+                              <i class="material-icons">block</i>
+                            </button>
+                        </td>
+                          <td>
+                              <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            6
+                          </td>
+                          <td>
+                            Pedro
+                          </td>
+                          <td>
+                            Sánchez
+                          </td>
+                          <td>
+                            Peet
+                          </td>
+                          <td>
+                          Peet@gmail.com
+                          </td>
+                          <td>5</td>
+                          <td>
+                            Madrid
+                          </td>
+                          <td>
+                              <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button> 
+                          </td>
+                          <td>
+                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
+                              <i class="material-icons">block</i>
+                            </button>
+                        </td>
+                          <td>
+                              <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TABLA DE ADMINISTRADORES
+            <div class="col-md-12">
+              <div class="card card-plain">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title mt-0"> Administradores</h4>
+                  <p class="card-category"> Base de datos de los admin</p>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class=" text-primary">
+                        <th>
+                          ID
+                        </th>
+                        <th>
+                          Nombre
+                        </th>
+                        <th>
+                          Apellidos
+                        </th>
+                        <th>
+                          Usuario
+                        </th>
+                        <th>
+                          Permisos
+                        </th>
+                        <th>
+                          Región
+                        </th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            1
+                          </td>
+                          <td>
+                            Raquel
+                          </td>
+                          <td>
+                            Martínez
+                          </td>
+                          <td>
+                            Rachel
+                          </td>
+                          <td>
+                            Super admin
+                          </td>
+                          <td>
+                            España
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            2
+                          </td>
+                          <td>
+                            Laura
+                          </td>
+                          <td>
+                            Maya
+                          </td>
+                          <td>
+                            Laimón
+                          </td>
+                          <td>
+                            Admin
+                          </td>
+                          <td>
+                            Madrid
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            3
+                          </td>
+                          <td>
+                            Eloy
+                          </td>
+                          <td>
+                            Rojano
+                          </td>
+                          <td>
+                            Eloycito
+                          </td>
+                          <td>
+                            Admin
+                          </td>
+                          <td>
+                            Cataluña
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            4
+                          </td>
+                          <td>
+                            Fernando
+                          </td>
+                          <td>
+                            Martín
+                          </td>
+                          <td>
+                            Fer
+                          </td>
+                          <td>
+                            Admin
+                          </td>
+                          <td>
+                            Castilla y León
+                          </td>
+                        </tr>
+                       <tr>
+                          <td>
+                            5
+                          </td>
+                          <td>
+                            Cristian
                           </td>
                           <td>
                             Malawi
                           </td>
                           <td>
-                            Feldkirchen in Kärnten
+                            Crmal
                           </td>
                           <td>
-                            $63,542
+                            Colaborador
                           </td>
                         </tr>
                         <tr>
@@ -439,13 +611,13 @@
                           <td>
                             $78,615
                           </td>
-                        </tr>
+                        </tr> -->
                       </tbody>
                     </table>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
