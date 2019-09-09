@@ -178,9 +178,23 @@
                             </div> -->
                         </div>
                     </div>
-                    <div class="booking-checkbox_wrap mt-4">
+                <!-- FORMULARIO DE COMENTARIOS -->
+                <!-- <div class="booking-checkbox_wrap mt-4"></div> -->
+                <div class="container">
+                    <form action="/action_page.php">
+                      <div class="form-group">
+                        <label for="comment"><br>Escribe tu opinión:</label>
+                        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                      </div>
+                    <!-- Subir archivo (por si suben foto) -->
+                      <form action="/action_page.php">
+                        <input type="file" name="imagen" accept="image/*"  class="btn btn-primary pull-right">
+                    <!-- FIN DE Subir archivo (por si suben foto) -->   
+                    </form>
+                      <button type="submit" class="btn btn-primary">Comentar</button>
+                    </form><br><br>
+                  <!-- FIN FORMULARIO DE COMENTARIOS -->
                         <h5>2 opiniones</h5>
-                        <hr>
                         <div class="customer-review_wrap">
                             <div class="customer-img">
                                 <img src="images/customer-img1.jpg" class="img-fluid" alt="#">
