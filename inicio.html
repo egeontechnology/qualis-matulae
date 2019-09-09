@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Tags CSS - Raquel -->
     <link rel="stylesheet" href="css/vesi label.css">
+    <!-- Links para log in y olvidar contraseña-->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <!--Boton añadir baño-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
@@ -39,34 +41,96 @@
                 <div class="row">
                     <div class="col-md-12">
                         <nav class="navbar navbar-expand-lg navbar-light">
-                            <a class="navbar-brand" href="inicio.html"><img src="images/logoipeepee.png" class="img-fluid" alt="ipeepee" /></a>
-                            <i onclick="document.getElementById('modal-wrapper').style.display='block'"class="fa fa-user fa-2x" style="color:ivory"></i>
-                            <!-- El popup-->
-                            <div id="modal-wrapper" class="modal">
-                                <form class="modal-content animate" action="/action_page.php">
-                                    <div class="imgcontainer">
-                                        <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp" style="font-size: 40px">&times;</span>
-                                        <h4 style="text-align:center">ENTRAR</h4>
+                          <a class="navbar-brand" href="inicio.html"><img src="images/logoipeepee.png" class="img-fluid" alt="ipeepee" /></a>
+                        <!-- boton Login -->
+                          <i onclick="document.getElementById('modal-wrapper').style.display='block'"class="fa fa-user fa-2x" style="color:ivory"></i>
+                          <!-- El popup-->
+                          <div id="modal-wrapper" class="modal">
+                            <form class="modal-content animate" action="/action_page.php">
+                              <!-- contenido dentro del popup-->
+                              <div class="imgcontainer">
+                                <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp" style="font-size: 40px">&times;</span>
+                                <h4 style="text-align:center">ENTRAR</h4>
+                              </div>
+                              <div style="padding: 20px;" id="form-olvidado">
+                                <form accept-charset="UTF-8" role="form" id="login-form" method="post">
+                                  <fieldset>
+                                    <div class="form-group input-group">
+                                      <span class="input-group-addon">
+                                        <i class="fa fa-user fa-lg"></i>
+                                      </span>
+                                      <input class="form-control" placeholder="Usuario" name="email" type="email" required="" autofocus="">
                                     </div>
-                                    <div class="container" style="margin-left: 5%">
-                                        <i class="fa fa-user fa-lg"></i><input type="text" placeholder="Nombre" name="uname"><br>
-                                        <i class="fa fa-lock fa-lg"></i> <input type="password" placeholder="Contraseña" name="psw"> <br>       
-                                        <button type="submit">Entrar<nav></nav></button><br><br> 
-                                        <a href="Login/Login - copia.html" style="text-decoration:none; text-align:center !important;">Regístrate</a><br><br>
-                                        <input type="checkbox"> Recuérdame     
-                                        <a href="#" style="text-decoration:none; float:right; margin-right:10%;">¿ Olvidaste tu contraseña ?</a>
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon">
+                                          <i class="fa fa-lock fa-lg"></i>
+                                        </span>
+                                        <input class="form-control" placeholder="Contraseña" name="password" type="password" value="" required="">
                                     </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                                        <p class="help-block">
+                                          <input type="checkbox"> Recuérdame
+                                          <a class="pull-right text-muted" href="#" id="olvidado"><small>¿Olvidaste tu contraseña?</small></a>
+                                        </p>
+                                      </div>
+                                      <div> 
+                                        <br>
+                                        <p style="text-align:center"> ¿Todavía no tienes cuenta? <a class="text-muted" href="Login - copia.html">Regístrate</a></p>
+                                      </div>
+                                  </fieldset>
                                 </form>
-                            </div>
-                            <!-- Funcion que hace que si el usuario clicka fuera del popup, se cierre  -->
-                            <script>
-                                          var modal = document.getElementById('modal-wrapper');
-                                         window.onclick = function(event) {
-                                             if (event.target == modal) {
-                                                 modal.style.display = "none";
-                                             }
-                                         }
-                            </script>
+                              </div>
+                              <!-- olvido contraseña -->
+                              <div style="display: none;" id="form-olvidado">
+                                    <h4 class="">
+                                          ¿Olvidaste tu contraseña?
+                                    </h4>
+                                        <form accept-charset="UTF-8" role="form" id="login-recordar" method="post">
+                                          <fieldset>
+                                            <span class="help-block">
+                                              Email address you use to log in to your account. 
+                                              <br>
+                                              Te enviaremos un mensaje con las instrucciones para elegir tu nueva contraseña.
+                                            </span>
+                                            <div class="form-group input-group">
+                                              <span class="input-group-addon">
+                                                @
+                                              </span>
+                                              <input class="form-control" placeholder="Email" name="email" type="email" required="">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary btn-block" id="btn-olvidado">
+                                              Continue
+                                            </button>
+                                            <p class="help-block">
+                                              <a class="text-muted" href="#" id="acceso"><small>Acceder a tu cuenta</small></a>
+                                            </p>
+                                          </fieldset>
+                                        </form>
+                              </div>
+                            </form>
+                          </div>
+                          <!-- Funcion que hace que si el usuario clicka fuera del popup, se cierre  -->
+                          <script>
+                            var modal = document.getElementById('modal-wrapper');
+                              window.onclick = function(event) {
+                              if (event.target == modal) {
+                              modal.style.display = "none";
+                              }
+                            }
+
+                            $(document).ready(function() {
+                              $('#olvidado').click(function(e) {
+                              e.preventDefault();
+                              $('div#form-olvidado').toggle('500');
+                              });
+
+                              $('#acceso').click(function(e) {
+                                e.preventDefault();
+                                $('div#form-olvidado').toggle('500');
+                                });
+                              });
+                          </script>
                         </nav>
                     </div>
                 </div>
@@ -114,7 +178,7 @@
     -o-transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s 0ms cubic-bezier(0,0,.2,1);
     transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms;
     transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
-    background-color:#AAA597;
+    background-color:#252a33;
     color: #fff;
     color: var(--mdc-theme-on-secondary,#fff);
     }
@@ -133,9 +197,31 @@
     }
     </style>
     
-    <button class="mdc-fab app-fab--absolute" aria-label="add">
+    <button class="mdc-fab app-fab--absolute" aria-label="Create" onclick="document.getElementById('add-wrapper').style.display='block'">
         <span class="mdc-fab__icon material-icons">add</span>
     </button>  
+    <div id="add-wrapper" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+          <!-- contenido dentro del popup-->
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('add-wrapper').style.display='none'" class="close" title="Close PopUp" style="font-size: 40px">&times;</span>
+            <a href="Login - copia.html">añadir baño</a>
+          </div>
+          <div style="padding: 20px;" id="form-olvidado">
+            <form accept-charset="UTF-8" role="form" id="login-form" method="post">
+            </form>
+          </div>
+        </form>
+      </div>
+      <!-- Funcion que hace que si el usuario clicka fuera del popup, se cierre  -->
+      <script>
+        var modal = document.getElementById('add-wrapper');
+          window.onclick = function(event) {
+          if (event.target == modal) {
+          modal.style.display = "none";
+          }
+        }
+      </script>
 
     <!-- SLIDER -->
     <section class="slider d-flex align-items-center">
