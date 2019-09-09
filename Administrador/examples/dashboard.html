@@ -356,9 +356,9 @@
                     -o-transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s 0ms cubic-bezier(0,0,.2,1);
                     transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms;
                     transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
-                    background-color:#252a33;
+                    background-color:#ffffff;
                     color: #fff;
-                    color: var(--mdc-theme-on-secondary,#fff);
+                    color: var(--mdc-theme-on-secondary,#000);
                     }
                     .app-fab--absolute {
                     position: absolute;
@@ -468,6 +468,11 @@
                 <div class="card-header card-header-warning">
                   <h4 class="card-title">Administradores</h4>
                   <p class="card-category">New employees on 15th September, 2016</p>
+                  <!-- Botón añadir -->
+                  <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px">
+                    <span class="mdc-fab__icon material-icons">add</span>
+                  </button>
+                  <!-- Fin botón añadir -->
                 </div>
                 <div class="card-body table-responsive">
                   <table class="table table-hover">
@@ -528,13 +533,13 @@
                                  </button>
                               </td>
                     </tbody>
-                    
                   </table>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
       </div>
       <footer class="footer">
         <div class="container-fluid">
