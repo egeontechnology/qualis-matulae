@@ -315,6 +315,69 @@
                       <p class="card-category">Últimos usuarios registrados</p>
                     </div>
                   </div>
+                  <!-- boton añadir -->
+                  <style>
+                    .mdc-fab.mdc-ripple-upgraded {
+                    --mdc-ripple-fg-opacity: 0.24;
+                    }
+                    .mdc-fab:not(.mdc-fab--extended) {
+                    border-radius: 50%;
+                    }
+                    .mdc-fab {
+                    background-color: var(--mdc-theme-secondary,#AAA597);
+                    }
+                    .mdc-fab {
+                    -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+                    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+                    display: inline-flex;
+                    position: relative;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    width: 60px;
+                    height: 60px;
+                    padding: 0;
+                    border: none;
+                    fill: currentColor;
+                    text-decoration: none;
+                    cursor: pointer;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    overflow: hidden;
+                    -webkit-transition: opacity 15ms linear 30ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
+                    transition: opacity 15ms linear 30ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
+                    -o-transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s 0ms cubic-bezier(0,0,.2,1);
+                    transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms;
+                    transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
+                    background-color:#252a33;
+                    color: #fff;
+                    color: var(--mdc-theme-on-secondary,#fff);
+                    }
+                    .app-fab--absolute {
+                    position: absolute;
+                    bottom: 1rem;
+                    right: 1rem;
+                    z-index: 999;
+                    }
+                
+                    @media(min-width: 1024px) {
+                        .app-fab--absolute {
+                        bottom: 1.5rem;
+                        right: 1.5rem;
+                        }
+                    }
+                  </style>
+                  <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px">
+                    <span class="mdc-fab__icon material-icons">add</span>
+                  </button>
+                  <!-- fin añadir boton -->
                 </div>
                <!-- TABLA IPEEPEEARS -->
                     <div class="card-body">
