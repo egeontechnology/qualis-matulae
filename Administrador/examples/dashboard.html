@@ -178,8 +178,30 @@
           </div>
         </div>
       </nav>
+      
       <!-- RESUMEN -->
       <div class="content">
+         <!-- DATE PICKER -->
+         <div class="container">
+            <div class="right" style="height:80px;">
+                <div class="form-group">
+                    <div class='input-group date' id='datetimepicker11'>
+                        <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    $('#datetimepicker11').datetimepicker({
+                        daysOfWeekDisabled: [0, 6]
+                    });
+                });
+            </script>
+        </div>
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
@@ -250,7 +272,7 @@
               </div>
             </div>
           </div>
-          <!-- GRÁFICOS -->
+        <!-- GRÁFICOS -->
           <div class="row">
             <div class="col-md-4">
               <div class="card card-chart">
@@ -304,6 +326,7 @@
               </div>
             </div>
           </div>
+          
           <!-- USUARIOS DASHBOARD -->
           <div class="row">
             <div class="col-lg-6 col-md-12">
@@ -374,7 +397,7 @@
                         }
                     }
                   </style>
-                  <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px">
+                  <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px" rel="tooltip" title="Añadir">
                     <span class="mdc-fab__icon material-icons">add</span>
                   </button>
                   <!-- fin añadir boton -->
@@ -469,7 +492,7 @@
                   <h4 class="card-title">Administradores</h4>
                   <p class="card-category">New employees on 15th September, 2016</p>
                   <!-- Botón añadir -->
-                  <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px">
+                  <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px" rel="tooltip" title="Añadir">
                     <span class="mdc-fab__icon material-icons">add</span>
                   </button>
                   <!-- Fin botón añadir -->
