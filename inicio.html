@@ -45,8 +45,8 @@
                         <!-- boton Login -->
                           <i onclick="document.getElementById('modal-wrapper').style.display='block'"class="fa fa-user fa-2x" style="color:ivory"></i>
                           <!-- El popup-->
-                          <div id="modal-wrapper" class="modal">
-                            <form class="modal-content animate" action="/action_page.php">
+                          <div id="modal-wrapper" class="modal" >
+                            <form class="modal-content animate " action="/action_page.php">
                               <!-- contenido dentro del popup-->
                               <div class="imgcontainer">
                                 <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp" style="font-size: 40px">&times;</span>
@@ -225,63 +225,47 @@
 
     <!-- SLIDER -->
     <section class="slider d-flex align-items-center">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-12">
+            <div class="slider-title_box">
+              <div class="row">
                 <div class="col-md-12">
-                    <div class="slider-title_box">
-                        <div class="row">
-                            <div class="col-md-12">
-                            </div>
-                        </div>
-                        <div class="row d-flex justify-content-center" style="margin-top: 80px">
-                            <div class="col-md-10">
-                                <form class="form-wrap mt-4">
-                                    <div class="btn-group" role="group" aria-label="Basic example">
-                                        <input type="text" placeholder="Busca tu baño" class="btn-group1">
-                                        <input type="text" placeholder="Madrid" class="btn-group2">
-                                        <a href="listing.html" class="btn-form" type="submit"><i class="fa fa-search" aria-hidden="true">  </i> BUSCAR</a>
-                                        <!--boton de buscar original con funcion: 
-                                        <button type="submit" class="btn-form" id= "btn-form"><span class="icon-magnifier search-icon"></span>BUSCAR<i class="pe-7s-angle-right"></i></button>
-                                        <script>
-                                            $(document).ready(function(){
-                                                $("#btn-form").click(function(){ 
-                                                    $(this).open("listing.html")
-                                                });
-                                            })
-                                            -->
-                                        </script>
-                                    </div>
-                                </form>
-                                <!-- TAGS-->
-                                <section style="margin-top: 20px">
-                                    <div class="toggle-button toggle-button--vesi" class=".col-md-4 .col-sm-12" style="margin: 0px 10px 0px 10px">
-                                        <input id="toggleButton1" type="checkbox">
-                                        <label for="toggleButton1" data-on-text="Gratuito" data-off-text="Gratuito"></label>
-                                        <div class="toggle-button__icon"></div>
-                                    </div>
-                                    <div class="toggle-button toggle-button--vesi" class=".col-md-4 .col-sm-12" style="margin: 0px 10px 0px 10px">
-                                        <input id="toggleButton2" type="checkbox">
-                                        <label for="toggleButton2" data-on-text="Cambiador" data-off-text="Cambiador"></label>
-                                        <div class="toggle-button__icon"></div>
-                                    </div>
-                                    <div class="toggle-button toggle-button--vesi" class=".col-md-4 .col-sm-12" style="margin: 0px 10px 0px 10px">
-                                            <input id="toggleButton3" type="checkbox">
-                                            <label for="toggleButton3" data-on-text="Accesible" data-off-text="Accesible"></label>
-                                            <div class="toggle-button__icon"></div>
-                                    </div>
-                                </section>
-                                <!-- fin de tags-->    
-                                <!--
-                                <div class="slider-link">
-                                    <a href="#">Más populares</a><span>o</span> <a href="#">Añadido recientemente</a>
-                                </div>
-                                -->
-                            </div>
-                        </div>
-                    </div>
                 </div>
+              </div>
+              <div class="row d-flex justify-content-center" style="margin-top: 80px">
+                <div class="col-md-10">
+                  <form class="form-wrap mt-4">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <input type="text" placeholder="Busca tu baño" class="btn-group1">
+                      <input type="text" placeholder="Madrid" class="btn-group2">
+                      <a href="listing.html" class="btn-form" type="submit" style="text-decoration: none"><i class="fa fa-search" aria-hidden="true"></i> BUSCAR</a>
+                    </div>
+                  </form>
+                  <!-- TAGS-->
+                  <section style="margin-top: 20px">
+                    <div class="toggle-button toggle-button--vesi" class=".col-md-4 .col-sm-12" style="margin: 0px 10px 0px 10px">
+                      <input id="toggleButton1" type="checkbox">
+                      <label for="toggleButton1" data-on-text="Gratuito" data-off-text="Gratuito"></label>
+                      <div class="toggle-button__icon"></div>
+                    </div>
+                    <div class="toggle-button toggle-button--vesi" class=".col-md-4 .col-sm-12" style="margin: 0px 10px 0px 10px">
+                      <input id="toggleButton2" type="checkbox">
+                      <label for="toggleButton2" data-on-text="Cambiador" data-off-text="Cambiador"></label>
+                      <div class="toggle-button__icon"></div>
+                    </div>
+                    <div class="toggle-button toggle-button--vesi" class=".col-md-4 .col-sm-12" style="margin: 0px 10px 0px 10px">
+                      <input id="toggleButton3" type="checkbox">
+                      <label for="toggleButton3" data-on-text="Accesible" data-off-text="Accesible"></label>
+                      <div class="toggle-button__icon"></div>
+                    </div>
+                  </section>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--// SLIDER -->
     <!--//END HEADER -->
