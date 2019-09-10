@@ -181,27 +181,6 @@
       
       <!-- RESUMEN -->
       <div class="content">
-         <!-- DATE PICKER -->
-         <div class="container">
-            <div class="right" style="height:80px;">
-                <div class="form-group">
-                    <div class='input-group date' id='datetimepicker11'>
-                        <input type='text' class="form-control" />
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-calendar">
-                            </span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <script type="text/javascript">
-                $(function () {
-                    $('#datetimepicker11').datetimepicker({
-                        daysOfWeekDisabled: [0, 6]
-                    });
-                });
-            </script>
-        </div>
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
@@ -397,7 +376,7 @@
                         }
                     }
                   </style>
-                  <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px" rel="tooltip" title="Añadir">
+                  <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px" rel="tooltip" title="Añadir" onclick="window.location.assign('../../Login - copia.html')">
                     <span class="mdc-fab__icon material-icons">add</span>
                   </button>
                   <!-- fin añadir boton -->
@@ -889,7 +868,9 @@
       md.initDashboardPageCharts();
 
     });
+    
   </script>
+
 </body>
 
 </html>
