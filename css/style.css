@@ -1032,4 +1032,27 @@ footer {
   }
 }
 
+/* BOTON 5 ESTRELLAS */
+.ec-stars-wrapper {
+	font-size: 10;
+	display: inline-block;
+}
+.ec-stars-wrapper a {
+	text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 22px;
+	color: #888;
+}
+
+.ec-stars-wrapper:hover a {
+	color: rgb(39, 130, 228);
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888;
+}
+
 /*# sourceMappingURL=style.css.map */
