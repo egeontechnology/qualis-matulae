@@ -74,6 +74,12 @@
             </a>
           </li>
           <li class="nav-item ">
+            <a class="nav-link" href="./comentarios.html">
+              <i class="material-icons">supervised_user_circle</i>
+              <p>Lista comentarios</p>
+            </a>
+          </li>
+          <li class="nav-item ">
             <a class="nav-link" href="./typography.html">
               <i class="material-icons">library_books</i>
               <p>Typography</p>
@@ -192,71 +198,8 @@
             <div class="col-md-12">
               <div class="card card-plain">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title mt-0"> Administradores</h4>
-                  <p class="card-category"> Base de datos de los admin</p>
-                   <!-- boton añadir -->
-                   <style>
-                    .mdc-fab.mdc-ripple-upgraded {
-                    --mdc-ripple-fg-opacity: 0.24;
-                    }
-                    .mdc-fab:not(.mdc-fab--extended) {
-                    border-radius: 50%;
-                    }
-                    .mdc-fab {
-                    background-color: var(--mdc-theme-secondary,#AAA597);
-                    }
-                    .mdc-fab {
-                    -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
-                    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
-                    display: inline-flex;
-                    position: relative;
-                    -ms-flex-align: center;
-                    align-items: center;
-                    -ms-flex-pack: center;
-                    justify-content: center;
-                    -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-                    width: 60px;
-                    height: 60px;
-                    padding: 0;
-                    border: none;
-                    fill: currentColor;
-                    text-decoration: none;
-                    cursor: pointer;
-                    -webkit-user-select: none;
-                    -moz-user-select: none;
-                    -ms-user-select: none;
-                    user-select: none;
-                    -moz-appearance: none;
-                    -webkit-appearance: none;
-                    overflow: hidden;
-                    -webkit-transition: opacity 15ms linear 30ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
-                    transition: opacity 15ms linear 30ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
-                    -o-transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s 0ms cubic-bezier(0,0,.2,1);
-                    transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms;
-                    transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
-                    background-color:#ffffff;
-                    color: #fff;
-                    color: var(--mdc-theme-on-secondary,#000);
-                    }
-                    .app-fab--absolute {
-                    position: absolute;
-                    bottom: 1rem;
-                    right: 1rem;
-                    z-index: 999;
-                    }
-                
-                    @media(min-width: 1024px) {
-                        .app-fab--absolute {
-                        bottom: 1.5rem;
-                        right: 1.5rem;
-                        }
-                    }
-                  </style>
-                  <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px" rel="tooltip" title="Añadir">
-                    <span class="mdc-fab__icon material-icons">add</span>
-                  </button>
-                  <!-- fin añadir boton -->
+                  <h4 class="card-title mt-0"> Comentarios</h4>
+                  <p class="card-category"> Validación de comentarios de los usuarios</p>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -266,29 +209,32 @@
                           ID
                         </th>
                         <th>
-                          Nombre
-                        </th>
-                        <th>
-                          Apellidos
-                        </th>
-                        <th>
                           Usuario
                         </th>
                         <th>
-                          Permisos
+                          Baño
                         </th>
                         <th>
-                          Región
+                          Título
                         </th>
                         <th>
-                            Editar
-                          </th>
-                          <th>
-                            Bloquear
-                          </th>
-                          <th>
-                            Eliminar
-                          </th>
+                          Comentario
+                        </th>
+                        <th>
+                          Valoración
+                        </th>
+                        <th>
+                          Limpieza
+                        </th>
+                        <th>
+                          Comodidad
+                        </th>
+                        <th>
+                          Bloquear
+                        </th>
+                        <th>
+                          Eliminar
+                        </th>
                       </thead>
                       <tbody>
                         <tr>
@@ -296,59 +242,26 @@
                             1
                           </td>
                           <td>
-                            Raquel
+                            Menchu45
                           </td>
                           <td>
-                            Martínez
+                          Bar Paco
                           </td>
                           <td>
-                            Rachel
+                            Super limpio
                           </td>
                           <td>
-                            Super admin
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus augue ac ex vestibulum, et scelerisque urna dapibus. Etiam sagittis magna vitae arcu maximus mattis. Quisque ipsum risus, consectetur a cursus id, maximus malesuada nisi. Fusce quam odio, tristique vitae est in, porta blandit nunc. 
                           </td>
                           <td>
-                            España
+                            <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"> </i> <i class="fa fa-tint" aria-hidden="true"></i>
+                          </td>
+                          <td>
+                            <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"> </i> <i class="fa fa-tint" aria-hidden="true"></i></i> <i class="fa fa-tint" aria-hidden="true"></i>
+
                           </td>
                         <td>
-                            <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm" disabled>
-                              <i class="material-icons">edit</i>
-                            </button> 
-                        </td>
-                        <td>
-                          <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm" disabled>
-                            <i class="material-icons">block</i>
-                          </button>
-                      </td>
-                        <td>
-                            <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm" disabled>
-                              <i class="material-icons">close</i>
-                            </button>
-                        </td>  
-                        </tr>
-                        <tr>
-                          <td>
-                            2
-                          </td>
-                          <td>
-                            Laura
-                          </td>
-                          <td>
-                            Maya
-                          </td>
-                          <td>
-                            Laimón
-                          </td>
-                          <td>
-                            Admin
-                          </td>
-                          <td>
-                            Madrid
-                          </td>
-                          <td>
-                            <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
-                              <i class="material-icons">edit</i>
-                            </button> 
+                          <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"> </i> <i class="fa fa-tint" aria-hidden="true"></i>
                         </td>
                         <td>
                           <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
@@ -359,77 +272,117 @@
                             <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
                               <i class="material-icons">close</i>
                             </button>
+                        </td>  
+                        </tr>
+                        <tr>
+                          <td>
+                            2
+                          </td>
+                          <td>
+                            Charliqr45
+                          </td>
+                          <td>
+                          Madrid Xanadú
+                          </td>
+                          <td>
+                           Recién reformado
+                          </td>
+                          <td>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus augue ac ex vestibulum, et scelerisque urna dapibus. Etiam sagittis magna vitae arcu maximus mattis. Quisque ipsum risus, consectetur a cursus id, maximus malesuada nisi. Fusce quam odio, tristique vitae est in, porta blandit nunc. 
+                          </td>
+                          <td>
+                            <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"> </i> <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"></i>
+                          </td>
+                          <td>
+                            <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"> </i> <i class="fa fa-tint" aria-hidden="true"></i></i> <i class="fa fa-tint" aria-hidden="true"></i>
+
+                          </td>
+                        <td>
+                          <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"> </i> <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"></i>
                         </td>
+                        <td>
+                          <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
+                            <i class="material-icons">block</i>
+                          </button>
+                      </td>
+                        <td>
+                            <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                              <i class="material-icons">close</i>
+                            </button>
+                        </td>  
                         </tr>
                         <tr>
                           <td>
                             3
                           </td>
                           <td>
-                            Eloy
+                          Mari09
                           </td>
                           <td>
-                            Rojano
+                          Casa Antonia
                           </td>
                           <td>
-                            Eloycito
+                          Asqueroso!!
                           </td>
                           <td>
-                            Admin
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus augue ac ex vestibulum, et scelerisque urna dapibus. Etiam sagittis magna vitae arcu maximus mattis. Quisque ipsum risus, consectetur a cursus id, maximus malesuada nisi. Fusce quam odio, tristique vitae est in, porta blandit nunc. 
                           </td>
                           <td>
-                            Cataluña
+                            <i class="fa fa-tint" aria-hidden="true"></i>
                           </td>
                           <td>
-                            <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm" disabled>
-                              <i class="material-icons">edit</i>
-                            </button> 
+                            <i class="fa fa-tint" aria-hidden="true"></i>
+                          </td>
+                        <td>
+                          <i class="fa fa-tint" aria-hidden="true"></i>
                         </td>
                         <td>
-                          <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm" disabled>
+                          <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
                             <i class="material-icons">block</i>
                           </button>
                       </td>
                         <td>
-                            <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm"disabled>
+                            <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
                               <i class="material-icons">close</i>
                             </button>
-                        </td>
+                        </td>  
                         </tr>
                         <tr>
                           <td>
                             4
                           </td>
                           <td>
-                            Fernando
+                            Mariosan
                           </td>
                           <td>
-                            Martín
+                          Bar manolo
                           </td>
                           <td>
-                            Fer
+                          Baño limpio, trato horrible!
                           </td>
                           <td>
-                            Admin
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus augue ac ex vestibulum, et scelerisque urna dapibus. Etiam sagittis magna vitae arcu maximus mattis. Quisque ipsum risus, consectetur a cursus id, maximus malesuada nisi. Fusce quam odio, tristique vitae est in, porta blandit nunc. 
                           </td>
                           <td>
-                            Castilla y León
+                            <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"></i> 
                           </td>
                           <td>
-                              <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm" disabled>
-                                <i class="material-icons">edit</i>
-                              </button> 
+                            <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"></i> <i class="fa fa-tint" aria-hidden="true"> </i> <i class="fa fa-tint" aria-hidden="true"></i></i> 
+
                           </td>
-                          <td>
-                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm" disabled>
-                              <i class="material-icons">block</i>
-                            </button>
+                        <td>
+                          <i class="fa fa-tint" aria-hidden="true"></i> 
                         </td>
-                          <td>
-                              <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm" disabled>
-                                <i class="material-icons">close</i>
-                              </button>
-                          </td>
+                        <td>
+                          <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
+                            <i class="material-icons">block</i>
+                          </button>
+                      </td>
+                        <td>
+                            <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                              <i class="material-icons">close</i>
+                            </button>
+                        </td>  
                         </tr>
                         <!-- <tr>
                           <td>
