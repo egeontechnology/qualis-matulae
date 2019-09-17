@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="css/vesi label.css">
     <!--Boton añadir baño-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- PLUGIN DE LAS COOKIES -->
+    <link rel="stylesheet" href="css/cookiealert.css">
+
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
@@ -1006,6 +1009,15 @@
         </div>
     </section>
     <!--//END ADD LISTING -->
+    
+    <!-- PLUGIN de las cookies -->
+    <div class="alert alert-dismissible text-center cookiealert" role="alert">
+      <div class="cookiealert-container">
+        <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="http://cookiesandyou.com/" target="_blank">Learn more</a>
+        <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">I agree</button>
+      </div>
+    </div>
+
     <!--============================= FOOTER =============================-->
     <footer class="main-block dark-bg">
         <div class="container">
@@ -1036,7 +1048,9 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+
+    <!-- JS de las cookies -->
+    <script src="js/cookiealert-standalone.js"></script>
 
     <script>
         $(window).scroll(function() {
