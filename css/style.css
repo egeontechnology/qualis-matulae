@@ -162,7 +162,7 @@ p {
 .slider {
   background: #252a33;
   /*background-size: cover;*/
-  min-height: 350px; }
+  min-height: 300px; }
   @media (max-width: 400px) {
     .slider {
       min-height: 300px; } }

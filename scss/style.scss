@@ -87,7 +87,6 @@ p {
     right: 0;
     left: 0;
     margin: 0 auto;
-    // border-bottom: 1px solid #636363;
 }
 
 .nav-menu-2 {
@@ -165,7 +164,7 @@ p {
 }
 
 .fixed {
-    border-bottom: 1px solid #636363;
+    // border-bottom: 1px solid #636363;
     position: fixed;
     top: 0;
     left: 0;
@@ -198,7 +197,7 @@ p {
 
 // slider
 .slider {
-    background: url(../images/slider.jpg) no-repeat;
+    background:  #3e434b;
     background-size: cover;
     min-height: 800px;
     @media (max-width: 992px) {
@@ -565,7 +564,7 @@ p {
     height: 64px;
 }
 
-.category-img path {}
+
 
 
 /* ==============================================================
