@@ -16,6 +16,7 @@
     /* transition: all 500ms ease-out; */
     color: #ecf0f1;
     background-color:rgba(33, 35, 38, 0.95);
+    font-size: 14px;
 }
 
 .cookiealert.show {
@@ -34,11 +35,10 @@
 }
 
 .button-cookies {
-    height: 50px;
-    line-height: 50px;
+    height: 30px;
     border: 1px solid transparent;
     border-radius:0.25rem; 
-    width: 170px;
+    width: 135px;
     color: #fff;
     border-color: #eab924;
     background-color: transparent !important;
