@@ -30,7 +30,7 @@
     <!--Boton añadir baño-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- PLUGIN DE LAS COOKIES -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <link rel="stylesheet" href="css/cookiealert.css">
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -1009,12 +1009,14 @@
         </div>
     </section>
     <!--//END ADD LISTING -->
-    
+
     <!-- PLUGIN de las cookies -->
+          <!--Icono de una cookie: &#x1F36A;-->
     <div class="alert alert-dismissible text-center cookiealert" role="alert">
       <div class="cookiealert-container">
-        <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="http://cookiesandyou.com/" target="_blank">Learn more</a>
-        <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">I agree</button>
+        <p>Este sitio web utiliza cookies para ofrecer un mejor servicio. Al utilizar este sitio web, aceptas dicho uso. <br>
+          Consulta nuestra <a href="http://cookiesandyou.com/" target="_blank">Política de cookies.</a></p>
+        <button type="button" class="button-cookies" aria-label="Close">Estoy de acuerdo</button>
       </div>
     </div>
 
@@ -1048,9 +1050,10 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
 
     <!-- JS de las cookies -->
-    <script src="js/cookiealert-standalone.js"></script>
+    <script src="js/cookiealert.js"></script>
 
     <script>
         $(window).scroll(function() {

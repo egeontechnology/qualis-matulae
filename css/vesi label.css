@@ -42,6 +42,7 @@
   width: 170px;
   color: #fff;
   border-color: #eab924; }
+
     
   .toggle-button--vesi input[type=checkbox] + label:before {
     opacity: 0;
