@@ -22,7 +22,7 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Dashboard iPeePee
+    Usuarios iPeePee
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -45,7 +45,7 @@
     <div class="logo">
       <img src="../../images/logoipeepee.png" class="img-fluid" alt="ipeepee" style="width: 200px;margin-left: 27px;" onclick="window.location.assign('../../inicio.html')">      </img>
     </div>
-      <div class="sidebar-wrapper">
+    <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item  ">
             <a class="nav-link" href="./dashboard.html">
@@ -53,12 +53,12 @@
               <p>Dashboard</p>
             </a>
           </li>
-          <li class="nav-item ">
+          <!-- <li class="nav-item ">
             <a class="nav-link" href="./user.html">
               <i class="material-icons">person</i>
               <p>Perfil</p>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item ">
             <a class="nav-link" href="./tables.html">
               <i class="material-icons">supervisor_account</i>
@@ -66,10 +66,10 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./admins.html">
-              <i class="material-icons">supervised_user_circle</i>
-              <p>Lista administradores</p>
-            </a>
+              <a class="nav-link" href="./aseos.html">
+                <i class="material-icons">wc</i>
+                <p>Lista baños</p>
+              </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="./comentarios.html">
@@ -78,12 +78,12 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./comentarios.html">
-              <i class="material-icons">wc</i>
-              <p>Lista baños</p>
-            </a>
+              <a class="nav-link" href="./admins.html">
+                <i class="material-icons">supervised_user_circle</i>
+                <p>Lista administradores</p>
+              </a>
           </li>
-          <li class="nav-item ">
+          <!-- <li class="nav-item ">
             <a class="nav-link" href="./typography.html">
               <i class="material-icons">library_books</i>
               <p>Typography</p>
@@ -118,7 +118,7 @@
               <i class="material-icons">unarchive</i>
               <p>Upgrade to PRO</p>
             </a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -178,11 +178,11 @@
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-                  <a class="dropdown-item" href="#">Profile</a>
-                  <a class="dropdown-item" href="#">Settings</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Log out</a>
-                </div>
+                    <a class="dropdown-item" href="user.html">Perfil</a>
+                    <!-- <a class="dropdown-item" href="#">Ajustes</a> -->
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href='../../inicio.html'>Salir</a>
+               </div>
               </li>
             </ul>
           </div>
@@ -206,16 +206,11 @@
         <div class="content">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-12">
-              <div class="card">
-                
-                  </div>
-                </div>
               </div>
             </div>
             <div class="col-md-12">
               <div class="card card-plain">
-                <div class="card-header card-header-primary">
+                <div class="card-header card-header-success">
                   <h4 class="card-title mt-0"> Usuarios</h4>
                   <p class="card-category"> Gestión de usuarios</p>
                     <!-- boton añadir -->
@@ -285,7 +280,7 @@
                 <div class="card-body">
                   <div class="table-responsive">
                     <table class="table table-hover">
-                        <thead class=" text-primary">
+                        <thead class=" text-success">
                         <th>
                           ID
                         </th>
@@ -339,12 +334,12 @@
                             Salamanca
                           </td>
                           <td>
-                            <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
+                            <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-link btn-sm">
                               <i class="material-icons">edit</i>
                             </button> 
                         </td>
                         <td>
-                          <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
+                          <button type="button" rel="tooltip" title="Bloquear" class="btn btn-success btn-link btn-sm">
                             <i class="material-icons">block</i>
                           </button>
                       </td>
@@ -375,12 +370,12 @@
                             Móstoles
                           </td>
                           <td>
-                              <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
+                              <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-link btn-sm">
                                 <i class="material-icons">edit</i>
                               </button> 
                           </td>
                           <td>
-                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
+                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-success btn-link btn-sm">
                               <i class="material-icons">block</i>
                             </button>
                         </td>
@@ -411,12 +406,12 @@
                             Tarragona
                           </td>
                           <td>
-                              <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
+                              <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-link btn-sm">
                                 <i class="material-icons">edit</i>
                               </button> 
                           </td>
                           <td>
-                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
+                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-success btn-link btn-sm">
                               <i class="material-icons">block</i>
                             </button>
                         </td>
@@ -447,12 +442,12 @@
                             León
                           </td>
                           <td>
-                              <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
+                              <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-link btn-sm">
                                 <i class="material-icons">edit</i>
                               </button> 
                           </td>
                           <td>
-                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
+                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-success btn-link btn-sm">
                               <i class="material-icons">block</i>
                             </button>
                         </td>
@@ -483,12 +478,12 @@
                             Elche
                           </td>
                           <td>
-                              <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
+                              <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-link btn-sm">
                                 <i class="material-icons">edit</i>
                               </button> 
                           </td>
                           <td>
-                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
+                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-success btn-link btn-sm">
                               <i class="material-icons">block</i>
                             </button>
                         </td>
@@ -519,12 +514,12 @@
                             Madrid
                           </td>
                           <td>
-                              <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
+                              <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-link btn-sm">
                                 <i class="material-icons">edit</i>
                               </button> 
                           </td>
                           <td>
-                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
+                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-success btn-link btn-sm">
                               <i class="material-icons">block</i>
                             </button>
                         </td>
