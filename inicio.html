@@ -49,7 +49,7 @@
                           <i onclick="document.getElementById('modal-wrapper').style.display='block'"class="fa fa-user fa-2x" style="color:ivory"></i>
                           <!-- El popup-->
                           <div id="modal-wrapper" class="modal" >
-                            <form class="modal-content animate " action="/action_page.php">
+                            <form class="modal-content animate "> <!-- action="/action_page.php">-->
                               <!-- contenido dentro del popup-->
                               <div style="padding: 20px" id="form-olvidado">
                                 <form accept-charset="UTF-8" role="form" id="login-form" method="post">
@@ -68,10 +68,10 @@
                                         <span class="input-group-addon">
                                           <i class="fa fa-lock fa-lg"></i>
                                         </span>
-                                        <input class="form-control" placeholder="Contraseña" name="password" type="password" value="" required="">
+                                        <input class="form-control" placeholder="Contraseña" name="password" type="password" value="" required="" id="1234">
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                                        <button onclick="Login()" type="submit" class="btn btn-primary btn-block">Entrar</button>
                                         <p class="help-block">
                                           <input type="checkbox"> Recuérdame
                                           <a class="pull-right text-muted" href="#" id="olvidado"><small>¿Olvidaste tu contraseña?</small></a>
@@ -100,7 +100,7 @@
                                     </div>
                                     <div class="form-group input-group">
                                         <span class="input-group-addon"> @</span>
-                                        <input class="form-control" placeholder="Email" name="email" type="email" required="">
+                                        <input class="form-control" placeholder="Email" name="email" type="email" required="" >
                                     </div>
                                     <div>
                                       <button type="submit" class="btn btn-primary btn-block" id="btn-olvidado">Enviar</button>
@@ -145,7 +145,7 @@
         <span class="mdc-fab__icon material-icons">add</span>
     </button>  
     <div id="add-wrapper" class="modal">
-      <form class="modal-content-2" action="/action_page.php">
+      <form class="modal-content-2"> <!-- action="/action_page.php">-->
       <!-- contenido dentro del popup-->
         <div class="imgcontainer">
           <span onclick="document.getElementById('add-wrapper').style.display='none'" class="close" title="Close PopUp" style="font-size: 40px">&times;</span>
@@ -511,7 +511,7 @@
                           <div class="col-md-4">
                             <div class="form-group">
                       <strong>¡Sube tus fotos del baño!</strong>
-                          <form action="/action_page.php">
+                          <form> <!-- action="/action_page.php">-->
                               <input type="file" name="imagen" accept="image/*"  class="btn btn-primary">
                           </form>
                             <p><strong><br>Nota:</strong> Las imágenes no pueden pesar más de 2gb</p>
@@ -790,16 +790,17 @@
             <div class="row justify-content-center">
                 <div class="col-md-4">
                     <div class="featured-btn-wrap">
-                        <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo" id="hide">VER MÁS</button>
-                        <!--función para ocultar botón????????-->
-                        <!-- <script>
-                          $(document).ready(function(){
-                            $("button").click(function(){
-                            $("#hide").hide();
-                            });
-                          });
-                        </script> -->
-                    </div>
+                        <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo" id="botonMas" onclick="botonMas()">VER MÁS</button>
+                      <!-- al hacer click cambie el texto a ver menores -->
+                      <script>
+                          function botonMas() {
+                            var uno = document.getElementById('botonMas');
+                            if (uno.innerHTML == 'VER MENOS') 
+                                uno.innerHTML = 'VER MÁS';
+                            else uno.innerHTML = 'VER MENOS'; 
+                          }
+                          </script>
+                      </div>
                 </div>
             </div>    
         </div>
@@ -1053,21 +1054,21 @@
 
     <!-- JS de las cookies -->
     <script src="js/cookiealert.js"></script>
-
+    
     <script>
-        $(window).scroll(function() {
-            // 100 = The point you would like to fade the nav in.
+    $(window).scroll(function() {
+    // 100 = The point you would like to fade the nav in.
 
-            if ($(window).scrollTop() > 100) {
+    if ($(window).scrollTop() > 10) {
 
-                $('.fixed').addClass('is-sticky');
+        $('.fixed').addClass('is-sticky');
 
-            } else {
+    } else {
 
-                $('.fixed').removeClass('is-sticky');
+        $('.fixed').removeClass('is-sticky');
 
-            };
-        });
+    };
+});
     </script>
   </body>
 
