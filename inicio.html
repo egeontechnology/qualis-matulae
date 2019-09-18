@@ -1055,8 +1055,21 @@
     <!-- JS de las cookies -->
     <script src="js/cookiealert.js"></script>
     
-    <!-- JS con todas las funciones -->
-    <!-- <script src="js/funciones-inicio.js"></script> -->
+    <script>
+    $(window).scroll(function() {
+    // 100 = The point you would like to fade the nav in.
+
+    if ($(window).scrollTop() > 10) {
+
+        $('.fixed').addClass('is-sticky');
+
+    } else {
+
+        $('.fixed').removeClass('is-sticky');
+
+    };
+});
+    </script>
   </body>
 
 </html>
