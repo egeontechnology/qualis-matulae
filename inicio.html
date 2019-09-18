@@ -46,7 +46,7 @@
                         <nav class="navbar navbar-expand-lg navbar-light">
                           <a class="navbar-brand" href="inicio.html"><img src="images/logoipeepee.png" class="img-fluid" alt="ipeepee" style="width: 200px"/></a>
                         <!-- boton Login -->
-                          <i onclick="document.getElementById('modal-wrapper').style.display='block'"class="fa fa-user fa-2x" style="color:ivory"></i>
+                          <i onclick="document.getElementById('modal-wrapper').style.display='block'"class="fa fa-user fa-2x" style="color:ivory" id="btn-1"></i>
                           <!-- El popup-->
                           <div id="modal-wrapper" class="modal" >
                             <form class="modal-content animate "> <!-- action="/action_page.php">-->
@@ -68,10 +68,30 @@
                                         <span class="input-group-addon">
                                           <i class="fa fa-lock fa-lg"></i>
                                         </span>
-                                        <input class="form-control" placeholder="Contraseña" name="password" type="password" value="" required="" id="1234">
+                                        <input class="form-control" placeholder="Contraseña" name="password" type="password" value="" required="" id="">
                                     </div>
                                     <div class="form-group">
                                         <button onclick="Login()" type="submit" class="btn btn-primary btn-block">Entrar</button>
+                                        <!-- funcion que al comprobar usuario cambia el boton de login -->
+                                         <script>
+                                          var btn_1 = document.getElementById('btn-1');
+                                          var btn_2 = document.getElementById('btn-2');
+
+                                          function Login(){
+                                            if (document.form.email.value=='usuario1@gmail.es' && document.form.password.value=='1234'){ 
+                                            document.form.submit();
+                                            function mostrarBoton () {
+                                              btn_1.style.display = 'none';
+                                              btn_2.style.display = 'inline';
+                                            };
+                                            } 
+                                            else{ 
+                                            alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+                                             } 
+                                          } 
+                                        
+                                         </script>
+
                                         <p class="help-block">
                                           <input type="checkbox"> Recuérdame
                                           <a class="pull-right text-muted" href="#" id="olvidado"><small>¿Olvidaste tu contraseña?</small></a>
@@ -134,6 +154,18 @@
                                 });
                               });
                           </script>
+                          <!-- boton login que sale solo cuando estas registrado -->
+                          <div id="login2" style="display: none"id="btn-2">
+                              <ul class="nav-item dropdown">
+                                  <a class="nav-link" href="#" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-2x" style="color:white"></i></a>
+                                  <li class="dropdown-menu dropdown-menu-right" style="right:0px !important">
+                                      <a class="dropdown-item" href="Administrador/examples/user.html">Perfil</a>
+                                      <a class="dropdown-item" href="Administrador/examples/dashboard.html">Ajustes</a>
+                                      <div class="dropdown-divider"></div> <!--separador-->
+                                      <a class="dropdown-item" href="#">Salir</a>
+                                  </li>
+                              </ul>
+                          </div>
                         </nav>
                     </div>
                 </div>
