@@ -46,13 +46,13 @@
                         <nav class="navbar navbar-expand-lg navbar-light">
                           <a class="navbar-brand" href="inicio.html"><img src="images/logoipeepee.png" class="img-fluid" alt="ipeepee" style="width: 200px"/></a>
                         <!-- boton Login -->
-                          <i onclick="document.getElementById('modal-wrapper').style.display='block'"class="fa fa-user fa-2x" style="color:ivory" id="btn-1"></i>
+                          <i onclick="document.getElementById('modal-wrapper').style.display='block'" class="fa fa-user fa-2x" style="color:ivory" id="btn-1"></i>
                           <!-- El popup-->
                           <div id="modal-wrapper" class="modal" >
                             <form class="modal-content animate "> <!-- action="/action_page.php">-->
                               <!-- contenido dentro del popup-->
                               <div style="padding: 20px" id="form-olvidado">
-                                <form accept-charset="UTF-8" role="form" id="login-form" method="post">
+                                <form accept-charset="UTF-8" role="form" name="login-form" id="login-form" method="post">
                                   <fieldset>
                                     <div class="imgcontainer">
                                       <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp" style="font-size: 40px">&times;</span>
@@ -71,26 +71,8 @@
                                         <input class="form-control" placeholder="Contraseña" name="password" type="password" value="" required="" id="">
                                     </div>
                                     <div class="form-group">
-                                        <button onclick="Login()" type="submit" class="btn btn-primary btn-block">Entrar</button>
-                                        <!-- funcion que al comprobar usuario cambia el boton de login -->
-                                         <script>
-                                          var btn_1 = document.getElementById('btn-1');
-                                          var btn_2 = document.getElementById('btn-2');
-
-                                          function Login(){
-                                            if (document.form.email.value=='usuario1@gmail.es' && document.form.password.value=='1234'){ 
-                                            document.form.submit();
-                                            function mostrarBoton () {
-                                              btn_1.style.display = 'none';
-                                              btn_2.style.display = 'inline';
-                                            };
-                                            } 
-                                            else{ 
-                                            alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
-                                             } 
-                                          } 
-                                        
-                                         </script>
+                                        <button onclick="Login()" class="btn btn-primary btn-block">Entrar</button>
+                                       
 
                                         <p class="help-block">
                                           <input type="checkbox"> Recuérdame
@@ -155,7 +137,7 @@
                               });
                           </script>
                           <!-- boton login que sale solo cuando estas registrado -->
-                          <div id="login2" style="display: none"id="btn-2">
+                          <div style="display: none" id="btn-2">
                               <ul class="nav-item dropdown">
                                   <a class="nav-link" href="#" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-2x" style="color:white"></i></a>
                                   <li class="dropdown-menu dropdown-menu-right" style="right:0px !important">
@@ -461,8 +443,8 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
-                    ¿Es gratuito? <label><input type="checkbox" id="cbox1" value="first_checkbox"> Sí </label>
-                    <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2"> No </label>
+                    ¿Es gratuito? <input type="radio" name="gratis" id="gratis1" value="Si"> Sí
+                    <input type="radio" id="gratis2" name="gratis" value="No"> No 
                   </div>
                 </div>
               </div>
@@ -1101,6 +1083,18 @@
 
     };
 });
+// <!-- funcion que al comprobar usuario cambia el boton de login -->
+                                          function Login(){
+                                            if (document.forms[0]["email"].value=='usuario1@gmail.es' && document.forms[0]["password"].value=='1234'){ 
+                                                $('#btn-1').hide();
+                                                $('#btn-2').show();
+                                                alert('aqui');
+                                            }else{ 
+                                            alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+                                             } 
+                                          } 
+                                        
+                                         
     </script>
   </body>
 
