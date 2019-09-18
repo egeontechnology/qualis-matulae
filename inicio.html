@@ -790,16 +790,17 @@
             <div class="row justify-content-center">
                 <div class="col-md-4">
                     <div class="featured-btn-wrap">
-                        <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo" id="hide">VER MÁS</button>
-                        <!--función para ocultar botón????????-->
-                        <!-- <script>
-                          $(document).ready(function(){
-                            $("button").click(function(){
-                            $("#hide").hide();
-                            });
-                          });
-                        </script> -->
-                    </div>
+                        <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo" id="botonMas" onclick="botonMas()">VER MÁS</button>
+                      <!-- al hacer click cambie el texto a ver menores -->
+                      <script>
+                          function botonMas() {
+                            var uno = document.getElementById('botonMas');
+                            if (uno.innerHTML == 'VER MENOS') 
+                                uno.innerHTML = 'VER MÁS';
+                            else uno.innerHTML = 'VER MENOS'; 
+                          }
+                          </script>
+                      </div>
                 </div>
             </div>    
         </div>
