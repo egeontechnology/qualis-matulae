@@ -22,7 +22,7 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Material Dashboard by Creative Tim
+    Dashboard iPeePee
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -42,11 +42,9 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
-      <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
-        </a>
-      </div>
+    <div class="logo">
+      <img src="../../images/logoipeepee.png" class="img-fluid" alt="ipeepee" style="width: 200px;margin-left: 27px;" onclick="window.location.assign('../../inicio.html')">      </img>
+    </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item  ">
@@ -75,8 +73,14 @@
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="./comentarios.html">
-              <i class="material-icons">supervised_user_circle</i>
+              <i class="material-icons">comment</i>
               <p>Lista comentarios</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./comentarios.html">
+              <i class="material-icons">wc</i>
+              <p>Lista baños</p>
             </a>
           </li>
           <li class="nav-item ">
@@ -120,11 +124,13 @@
     </div>
     <div class="main-panel">
       <!-- Navbar -->
+      
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
-          <div class="navbar-wrapper">
+
+          <!-- <div class="navbar-wrapper">
             <a class="navbar-brand" href="#pablo">Table List</a>
-          </div>
+          </div> -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon icon-bar"></span>
@@ -188,305 +194,231 @@
       <div class="content">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-12">
-              <div class="card">
+          </div>
+        </div>
+         <div class="col-md-12">
+          <div class="card card-plain">
+           <div class="card-header card-header-primary">
+            <h4 class="card-title mt-0"> Administradores</h4>
+              <p class="card-category"> Base de datos de los admin</p>
+              <!-- boton añadir -->
+               <style>
+                .mdc-fab.mdc-ripple-upgraded {
+                --mdc-ripple-fg-opacity: 0.24;
+                 }
+                .mdc-fab:not(.mdc-fab--extended) {
+                border-radius: 50%;
+                 }
+                .mdc-fab {
+                background-color: var(--mdc-theme-secondary,#AAA597);
+                 }
+                .mdc-fab {
+                -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+                box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+                display: inline-flex;
+                position: relative;
+                -ms-flex-align: center;
+                align-items: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                width: 60px;
+                height: 60px;
+                padding: 0;
+                border: none;
+                fill: currentColor;
+                text-decoration: none;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                overflow: hidden;
+                -webkit-transition: opacity 15ms linear 30ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
+                transition: opacity 15ms linear 30ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
+                -o-transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s 0ms cubic-bezier(0,0,.2,1);
+                transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms;
+                transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
+                background-color:#ffffff;
+                color: #fff;
+                color: var(--mdc-theme-on-secondary,#000);
+                }
+                .app-fab--absolute {
+                position: absolute;
+                bottom: 1rem;
+                right: 1rem;
+                z-index: 999;
+                }
                 
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="card card-plain">
-                <div class="card-header card-header-primary">
-                  <h4 class="card-title mt-0"> Administradores</h4>
-                  <p class="card-category"> Base de datos de los admin</p>
-                   <!-- boton añadir -->
-                   <style>
-                    .mdc-fab.mdc-ripple-upgraded {
-                    --mdc-ripple-fg-opacity: 0.24;
-                    }
-                    .mdc-fab:not(.mdc-fab--extended) {
-                    border-radius: 50%;
-                    }
-                    .mdc-fab {
-                    background-color: var(--mdc-theme-secondary,#AAA597);
-                    }
-                    .mdc-fab {
-                    -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
-                    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
-                    display: inline-flex;
-                    position: relative;
-                    -ms-flex-align: center;
-                    align-items: center;
-                    -ms-flex-pack: center;
-                    justify-content: center;
-                    -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-                    width: 60px;
-                    height: 60px;
-                    padding: 0;
-                    border: none;
-                    fill: currentColor;
-                    text-decoration: none;
-                    cursor: pointer;
-                    -webkit-user-select: none;
-                    -moz-user-select: none;
-                    -ms-user-select: none;
-                    user-select: none;
-                    -moz-appearance: none;
-                    -webkit-appearance: none;
-                    overflow: hidden;
-                    -webkit-transition: opacity 15ms linear 30ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
-                    transition: opacity 15ms linear 30ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
-                    -o-transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s 0ms cubic-bezier(0,0,.2,1);
-                    transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms;
-                    transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
-                    background-color:#ffffff;
-                    color: #fff;
-                    color: var(--mdc-theme-on-secondary,#000);
-                    }
-                    .app-fab--absolute {
-                    position: absolute;
-                    bottom: 1rem;
-                    right: 1rem;
-                    z-index: 999;
-                    }
-                
-                    @media(min-width: 1024px) {
-                        .app-fab--absolute {
-                        bottom: 1.5rem;
-                        right: 1.5rem;
-                        }
-                    }
-                  </style>
-                  <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px" rel="tooltip" title="Añadir">
-                    <span class="mdc-fab__icon material-icons">add</span>
-                  </button>
+                  @media(min-width: 1024px) {
+                      .app-fab--absolute {
+                      bottom: 1.5rem;
+                      right: 1.5rem;
+                      }
+                  }
+                </style>
+                <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px" rel="tooltip" title="Añadir">
+                  <span class="mdc-fab__icon material-icons">add</span>
+                </button>
                   <!-- fin añadir boton -->
-                </div>
-                <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table table-hover">
-                        <thead class=" text-primary">
-                        <th>
-                          ID
-                        </th>
-                        <th>
-                          Nombre
-                        </th>
-                        <th>
-                          Apellidos
-                        </th>
-                        <th>
-                          Usuario
-                        </th>
-                        <th>
-                          Permisos
-                        </th>
-                        <th>
-                          Región
-                        </th>
-                        <th>
-                            Editar
-                          </th>
-                          <th>
-                            Bloquear
-                          </th>
-                          <th>
-                            Eliminar
-                          </th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            1
-                          </td>
-                          <td>
-                            Raquel
-                          </td>
-                          <td>
-                            Martínez
-                          </td>
-                          <td>
-                            Rachel
-                          </td>
-                          <td>
-                            Super admin
-                          </td>
-                          <td>
-                            España
-                          </td>
-                        <td>
-                            <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm" disabled>
-                              <i class="material-icons">edit</i>
-                            </button> 
-                        </td>
-                        <td>
-                          <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm" disabled>
-                            <i class="material-icons">block</i>
-                          </button>
-                      </td>
-                        <td>
-                            <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm" disabled>
-                              <i class="material-icons">close</i>
-                            </button>
-                        </td>  
-                        </tr>
-                        <tr>
-                          <td>
-                            2
-                          </td>
-                          <td>
-                            Laura
-                          </td>
-                          <td>
-                            Maya
-                          </td>
-                          <td>
-                            Laimón
-                          </td>
-                          <td>
-                            Admin
-                          </td>
-                          <td>
-                            Madrid
-                          </td>
-                          <td>
-                            <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
-                              <i class="material-icons">edit</i>
-                            </button> 
-                        </td>
-                        <td>
-                          <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
-                            <i class="material-icons">block</i>
-                          </button>
-                      </td>
-                        <td>
-                            <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
-                              <i class="material-icons">close</i>
-                            </button>
-                        </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            3
-                          </td>
-                          <td>
-                            Eloy
-                          </td>
-                          <td>
-                            Rojano
-                          </td>
-                          <td>
-                            Eloycito
-                          </td>
-                          <td>
-                            Admin
-                          </td>
-                          <td>
-                            Cataluña
-                          </td>
-                          <td>
-                            <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm" disabled>
-                              <i class="material-icons">edit</i>
-                            </button> 
-                        </td>
-                        <td>
-                          <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm" disabled>
-                            <i class="material-icons">block</i>
-                          </button>
-                      </td>
-                        <td>
-                            <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm"disabled>
-                              <i class="material-icons">close</i>
-                            </button>
-                        </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            4
-                          </td>
-                          <td>
-                            Fernando
-                          </td>
-                          <td>
-                            Martín
-                          </td>
-                          <td>
-                            Fer
-                          </td>
-                          <td>
-                            Admin
-                          </td>
-                          <td>
-                            Castilla y León
-                          </td>
-                          <td>
-                              <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm" disabled>
-                                <i class="material-icons">edit</i>
-                              </button> 
-                          </td>
-                          <td>
-                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm" disabled>
-                              <i class="material-icons">block</i>
-                            </button>
-                        </td>
-                          <td>
-                              <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm" disabled>
-                                <i class="material-icons">close</i>
-                              </button>
-                          </td>
-                        </tr>
-                        <!-- <tr>
-                          <td>
-                            5
-                          </td>
-                          <td>
-                            Cristian
-                          </td>
-                          <td>
-                            Malawi
-                          </td>
-                          <td>
-                            Crmal
-                          </td>
-                          <td>
-                            Colaborador
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            6
-                          </td>
-                          <td>
-                            Mason Porter
-                          </td>
-                          <td>
-                            Chile
-                          </td>
-                          <td>
-                            Gloucester
-                          </td>
-                          <td>
-                            $78,615
-                          </td>
-                        </tr> -->
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
+             </div>
+             <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-hover">
+                 <thead class=" text-primary">
+                  <th>
+                    ID
+                  </th>
+                  <th>
+                    Nombre
+                  </th>
+                  <th>
+                    Apellidos
+                  </th>
+                  <th>
+                    Usuario
+                  </th>
+                  <th>
+                    Permisos
+                  </th>
+                  <th>
+                    Región
+                  </th>
+                  <th>
+                    Editar
+                  </th>
+                  <th>
+                    Bloquear
+                  </th>
+                  <th>
+                    Eliminar
+                  </th>
+                 </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    1
+                  </td>
+                  <td>
+                    Raquel
+                  </td>
+                  <td>
+                    Martínez
+                  </td>
+                  <td>
+                    Rachel
+                  </td>
+                  <td>
+                    Super admin
+                  </td>
+                  <td>
+                    España
+                  </td>
+                  <td>
+                     <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm" disabled>
+                        <i class="material-icons">edit</i>
+                     </button> 
+                  </td>
+                  <td>
+                     <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm" disabled>
+                        <i class="material-icons">block</i>
+                     </button>
+                  </td>
+                  <td>
+                     <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm" disabled>
+                        <i class="material-icons">close</i>
+                     </button>
+                  </td>  
+                </tr>
+                <tr>
+                  <td>
+                    2
+                  </td>
+                  <td>
+                    Laura
+                  </td>
+                  <td>
+                     Maya
+                  </td>
+                  <td>
+                     Laimón
+                  </td>
+                  <td>
+                     Admin
+                  </td>
+                  <td>
+                     Madrid
+                  </td>
+                  <td>
+                    <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm">
+                     <i class="material-icons">edit</i>
+                    </button> 
+                  </td>
+                  <td>
+                    <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
+                     <i class="material-icons">block</i>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                     <i class="material-icons">close</i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    3
+                  </td>
+                  <td>
+                    Eloy
+                  </td>
+                  <td>
+                    Rojano
+                  </td>
+                  <td>
+                    Eloycito
+                  </td>
+                  <td>
+                    Admin
+                  </td>
+                  <td>
+                    Cataluña
+                  </td>
+                  <td>
+                    <button type="button" rel="tooltip" title="Editar" class="btn btn-primary btn-link btn-sm" disabled>
+                      <i class="material-icons">edit</i>
+                    </button> 
+                  </td>
+                  <td>
+                    <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm" disabled>
+                      <i class="material-icons">block</i>
+                    </button>
+                  </td>
+                  <td>
+                    <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm"disabled>
+                       <i class="material-icons">close</i>
+                    </button>
+                  </td>
+                 </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
+     </div>
+    </div>
+  </div>
       <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
             <ul>
               <li>
                 <a href="https://www.creative-tim.com">
-                  Creative Tim
+                  iPeePee
                 </a>
               </li>
               <li>
