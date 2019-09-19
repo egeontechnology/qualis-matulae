@@ -62,25 +62,25 @@
           <li class="nav-item ">
             <a class="nav-link" href="./tables.html">
               <i class="material-icons">supervisor_account</i>
-              <p>Lista usuarios</p>
+              <p>Usuarios</p>
             </a>
           </li>
           <li class="nav-item ">
               <a class="nav-link" href="./aseos.html">
                 <i class="material-icons">wc</i>
-                <p>Lista baños</p>
+                <p>Baños</p>
               </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="./comentarios.html">
               <i class="material-icons">comment</i>
-              <p>Lista comentarios</p>
+              <p>Comentarios</p>
             </a>
           </li>
           <li class="nav-item ">
               <a class="nav-link" href="./admins.html">
                 <i class="material-icons">supervised_user_circle</i>
-                <p>Lista administradores</p>
+                <p>Administradores</p>
               </a>
           </li>
           <!-- <li class="nav-item ">
@@ -138,15 +138,17 @@
             <span class="navbar-toggler-icon icon-bar"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end">
-            <form class="navbar-form">
-              <div class="input-group no-border">
+            <!--BARRA BUSCADOR
+               <form class="navbar-form">
+                <div class="input-group no-border">
                 <input type="text" value="" class="form-control" placeholder="Search...">
                 <button type="submit" class="btn btn-white btn-round btn-just-icon">
                   <i class="material-icons">search</i>
                   <div class="ripple-container"></div>
                 </button>
-              </div>
+              </div> 
             </form>
+            FIN BARRA SEARCH-->
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="#pablo">
@@ -260,7 +262,7 @@
                       }
                   }
                 </style>
-                <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px" rel="tooltip" title="Añadir">
+                <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px" rel="tooltip" title="Añadir"  onclick="window.location.assign('../../Login - copia.html')">
                   <span class="mdc-fab__icon material-icons">add</span>
                 </button>
                   <!-- fin añadir boton -->
@@ -268,7 +270,7 @@
              <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-hover">
-                 <thead class=" text-primary">
+                 <thead class=" text-primary" align="center">
                   <th>
                     ID
                   </th>
@@ -297,7 +299,7 @@
                     Eliminar
                   </th>
                  </thead>
-              <tbody>
+              <tbody align="center">
                 <tr>
                   <td>
                     1
@@ -412,7 +414,9 @@
      </div>
     </div>
   </div>
-      <footer class="footer">
+  <!-- FOOTER QUE NO NECESITAMOS -->
+
+      <!-- <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
             <ul>
@@ -499,7 +503,7 @@
                   Get the pro version
                 </a>
             </li> -->
-        <li class="button-container">
+        <!-- <li class="button-container">
           <a href="https://demos.creative-tim.com/material-dashboard/docs/2.1/getting-started/introduction.html" target="_blank" class="btn btn-default btn-block">
             View Documentation
           </a>
@@ -516,7 +520,10 @@
         </li>
       </ul>
     </div>
-  </div>
+  </div> --> 
+  
+  <!-- FIN DE FOOTER QUE NO NECESITAMOS -->
+
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
