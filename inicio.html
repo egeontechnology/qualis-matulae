@@ -1030,12 +1030,60 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <div class="featured-btn-wrap">
-                        <a href="#" class="btn btn-danger" style="opacity:initial"><span class="ti-plus"></span> ESCRÍBENOS</a>
+            <!--esto es lo que se va a ver al darle al boton de vescribenos: sale el formulario de contacto-->
+            <div id="contact" class="collapse">
+              <div class="row">
+                  <section>
+                    <div class="container">
+                      <div class="section-heading align-left">
+                        <h3>Contacta con nosotros</h3>
+                        <p class="light-gray">Ask us anything on just sey hello!</p>
+                      </div>
+                      <form role="form" id="contact-form" class="contact-form">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
+                             </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <button type="submit" class="btn btn-rect btn-rect--default pull-right">Send a message</button>
+                          </div>
+                        </div>
+                      </form>
                     </div>
+                  </section>
+              </div>
+            </div>
+            <!-- hasta aqui -->
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <div class="featured-btn-wrap">
+                  <button type="button" class="btn btn-danger" style="opacity:initial" data-toggle="collapse" data-target="#contact" id="hide">ESCRÍBENOS</button>
+                  <!--función para ocultar botón-->
+                  <script>
+                    $(document).ready(function(){
+                      $("button").click(function(){
+                      $("#hide").hide();
+                      });
+                    });
+                  </script>
                 </div>
+              </div>
             </div>
         </div>
     </section>
