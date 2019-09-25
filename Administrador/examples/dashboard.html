@@ -38,6 +38,7 @@
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+  <script src="jquery.ui.datepicker-es.js"></script>
 </head>
 <!-- FIN CALENDARIO -->
 <body class="">
@@ -176,7 +177,7 @@
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Mike John responded to your email</a>
+                  <a class="dropdown-item" href="#">Tienes 2 baños que revisar</a>
                   <a class="dropdown-item" href="#">You have 5 new tasks</a>
                   <a class="dropdown-item" href="#">You're now friend with Andrew</a>
                   <a class="dropdown-item" href="#">Another Notification</a>
@@ -230,7 +231,8 @@
                 </div>
                 <div class="card-footer">
                   <div class="stats">
-                    <i class="material-icons">trending_up</i> Nº altas en las últimas 24 horas
+                    <i class="material-icons">playlist_add_check</i>
+                    <a href="comentarios.html">Gestionar usuarios</a>
                   </div>
                 </div>
               </div>
@@ -246,7 +248,8 @@
                 </div>
                 <div class="card-footer">
                   <div class="stats">
-                    <i class="material-icons">trending_up</i> Nº de añadidos en la última semana
+                    <i class="material-icons">playlist_add_check</i>
+                    <a href="aseos.html">Gestionar baños</a>
                   </div>
                 </div>
               </div>
@@ -264,7 +267,7 @@
                 <div class="card-footer">
                   <div class="stats">
                     <i class="material-icons">playlist_add_check</i>
-                    <a href="#pablo">Gestionar comentarios</a>
+                    <a href="comentarios.html">Gestionar comentarios</a>
                   </div>
                 </div>
               </div>
@@ -330,8 +333,7 @@
                 </div>
                 <div class="card-body">
                     <h4 class="card-title">Comentarios</h4>
-                    <p class="text-warning"> 59 <a href="#pablo">Pendientes de revisión</a></p> 
-                    <span class="text-success"> 2.054 </span> <a href="#pablo">Publicados</a></p> 
+                    <p class="text-warning"> 59 <a href="#comentarios.html">Pendientes de revisión</a></p> 
                   </div>
                   <!-- <div class="card-footer">
                     <div class="stats">
@@ -343,243 +345,537 @@
           </div>
           
           <!-- USUARIOS DASHBOARD -->
-          <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <div class="card" >
-                <div class="card-header card-header-tabs card-header-success" >
-                  <div class="nav-tabs-navigation">
-                    <div class="nav-tabs-wrapper">
-                      <h4 class="card-title">iPeePeears</h4>
-                      <p class="card-category">Últimos usuarios registrados</p>
-                    </div>
-                  </div>
-                  <!-- boton añadir -->
-                  <style>
-                    .mdc-fab.mdc-ripple-upgraded {
-                    --mdc-ripple-fg-opacity: 0.24;
-                    }
-                    .mdc-fab:not(.mdc-fab--extended) {
-                    border-radius: 50%;
-                    }
-                    .mdc-fab {
-                    background-color: var(--mdc-theme-secondary,#AAA597);
-                    }
-                    .mdc-fab {
-                    -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
-                    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
-                    display: inline-flex;
-                    position: relative;
-                    -ms-flex-align: center;
-                    align-items: center;
-                    -ms-flex-pack: center;
-                    justify-content: center;
-                    -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-                    width: 60px;
-                    height: 60px;
-                    padding: 0;
-                    border: none;
-                    fill: currentColor;
-                    text-decoration: none;
-                    cursor: pointer;
-                    -webkit-user-select: none;
-                    -moz-user-select: none;
-                    -ms-user-select: none;
-                    user-select: none;
-                    -moz-appearance: none;
-                    -webkit-appearance: none;
-                    overflow: hidden;
-                    -webkit-transition: opacity 15ms linear 30ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
-                    transition: opacity 15ms linear 30ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
-                    -o-transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s 0ms cubic-bezier(0,0,.2,1);
-                    transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms;
-                    transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
-                    background-color:#ffffff;
-                    color: #fff;
-                    color: var(--mdc-theme-on-secondary,#000);
-                    }
-                    .app-fab--absolute {
-                    position: absolute;
-                    bottom: 1rem;
-                    right: 1rem;
-                    z-index: 999;
-                    }
-                
-                    @media(min-width: 1024px) {
-                        .app-fab--absolute {
-                        bottom: 1.5rem;
-                        right: 1.5rem;
-                        }
-                    }
-                  </style>
-                  <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px" rel="tooltip" title="Añadir" onclick="window.location.assign('../../Login - copia.html')">
-                    <span class="mdc-fab__icon material-icons">add</span>
-                  </button>
-                  <!-- fin añadir boton -->
+ <!--INICIO DE TABLA USUARIOS-->
+ <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-success">
+              <h4 class="card-title mt-0"> Últimos usuarios registrados</h4>
+              <p class="card-category"> Gestión de usuarios</p>
+                <!-- boton añadir -->
+                <style>
+                  .mdc-fab.mdc-ripple-upgraded {
+                  --mdc-ripple-fg-opacity: 0.24;
+                  }
+                  .mdc-fab:not(.mdc-fab--extended) {
+                  border-radius: 50%;
+                  }
+                  .mdc-fab {
+                  background-color: var(--mdc-theme-secondary,#AAA597);
+                  }
+                  .mdc-fab {
+                  -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+                  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+                  display: inline-flex;
+                  position: relative;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  width: 60px;
+                  height: 60px;
+                  padding: 0;
+                  border: none;
+                  fill: currentColor;
+                  text-decoration: none;
+                  cursor: pointer;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  -ms-user-select: none;
+                  user-select: none;
+                  -moz-appearance: none;
+                  -webkit-appearance: none;
+                  overflow: hidden;
+                  -webkit-transition: opacity 15ms linear 30ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
+                  transition: opacity 15ms linear 30ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
+                  -o-transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s 0ms cubic-bezier(0,0,.2,1);
+                  transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms;
+                  transition: box-shadow .28s cubic-bezier(.4,0,.2,1),opacity 15ms linear 30ms,transform .27s cubic-bezier(0,0,.2,1) 0ms,-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-transform .27s cubic-bezier(0,0,.2,1) 0ms;
+                  background-color:#ffffff;
+                  color: #fff;
+                  color: var(--mdc-theme-on-secondary,#000);
+                  }
+                  .app-fab--absolute {
+                  position: absolute;
+                  bottom: 1rem;
+                  right: 1rem;
+                  z-index: 999;
+                  }
+              
+                  @media(min-width: 1024px) {
+                      .app-fab--absolute {
+                      bottom: 1.5rem;
+                      right: 1.5rem;
+                      }
+                  }
+                </style>
+              <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px" rel="tooltip" title="Ver más usuarios" onclick="window.location.assign('tables.html')">
+                <span class="mdc-fab__icon material-icons">remove_red_eye</span>
+              </button>
+                <!-- fin añadir boton -->
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class=" text-success" align="center">
+                    <th>
+                      ID
+                    </th>
+                    <th>
+                      Nombre
+                    </th>
+                    <th>
+                      Apellidos
+                    </th>
+                    <th>
+                      Nombre de usuario
+                    </th>
+                    <th>
+                      Email
+                    </th>
+                    <th>
+                      Publicaciones
+                    </th>
+                    <th>
+                      Ciudad
+                    </th>
+                    <th>
+                      Editar
+                    </th>
+                    <th>
+                      Bloquear
+                    </th>
+                    <th>
+                      Eliminar
+                    </th>
+                  </thead>
+                  <tbody align="center">
+                    <tr>
+                      <td>
+                        1
+                      </td>
+                      <td>
+                        Elena 
+                      </td>
+                      <td>
+                        Santos
+                      </td>
+                      <td>
+                        Helen12
+                      </td>
+                      <td>
+                       Helen12@gmail.com
+                      </td>
+                      <td>6</td>
+                      <td>
+                        Salamanca
+                      </td>
+                      <td>
+                        <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-link btn-sm">
+                          <i class="material-icons">edit</i>
+                        </button> 
+                    </td>
+                    <td>
+                      <button type="button" rel="tooltip" title="Bloquear" class="btn btn-success btn-link btn-sm">
+                        <i class="material-icons">block</i>
+                      </button>
+                  </td>
+                    <td>
+                        <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                          <i class="material-icons">close</i>
+                        </button>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        2
+                      </td>
+                      <td>
+                        Lucía
+                      </td>
+                      <td>
+                        Martínez
+                      </td>
+                      <td>
+                        Luluu
+                      </td>
+                      <td>
+                      luluu@gmail.com
+                      </td>
+                      <td>0</td>
+                      <td>
+                        Móstoles
+                      </td>
+                      <td>
+                          <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-link btn-sm">
+                            <i class="material-icons">edit</i>
+                          </button> 
+                      </td>
+                      <td>
+                        <button type="button" rel="tooltip" title="Bloquear" class="btn btn-success btn-link btn-sm">
+                          <i class="material-icons">block</i>
+                        </button>
+                    </td>
+                      <td>
+                          <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                            <i class="material-icons">close</i>
+                          </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        3
+                      </td>
+                      <td>
+                        Carlos
+                      </td>
+                      <td>
+                        Cantero
+                      </td>
+                      <td>
+                        Charliee2
+                      </td>
+                      <td>
+                      Charliee12@gmail.com
+                      </td>
+                      <td>2</td>
+                      <td>
+                        Tarragona
+                      </td>
+                      <td>
+                          <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-link btn-sm">
+                            <i class="material-icons">edit</i>
+                          </button> 
+                      </td>
+                      <td>
+                        <button type="button" rel="tooltip" title="Bloquear" class="btn btn-success btn-link btn-sm">
+                          <i class="material-icons">block</i>
+                        </button>
+                    </td>
+                      <td>
+                          <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                            <i class="material-icons">close</i>
+                          </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        4
+                      </td>
+                      <td>
+                        Andrés
+                      </td>
+                      <td>
+                        Carmona
+                      </td>
+                      <td>
+                        andca56
+                      </td>
+                      <td>
+                      andca56@hotmail.com
+                      </td>
+                      <td>0</td>
+                      <td>
+                        León
+                      </td>
+                      <td>
+                          <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-link btn-sm">
+                            <i class="material-icons">edit</i>
+                          </button> 
+                      </td>
+                      <td>
+                        <button type="button" rel="tooltip" title="Bloquear" class="btn btn-success btn-link btn-sm">
+                          <i class="material-icons">block</i>
+                        </button>
+                    </td>
+                      <td>
+                          <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                            <i class="material-icons">close</i>
+                          </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        5
+                      </td>
+                      <td>
+                        Carolina
+                      </td>
+                      <td>
+                        Reales
+                      </td>
+                      <td>
+                        Karool
+                      </td>
+                      <td>
+                      karool@gmail.com
+                      </td>
+                      <td>1</td>
+                      <td>
+                        Elche
+                      </td>
+                      <td>
+                          <button type="button" rel="tooltip" title="Editar" class="btn btn-success btn-link btn-sm">
+                            <i class="material-icons">edit</i>
+                          </button> 
+                      </td>
+                      <td>
+                        <button type="button" rel="tooltip" title="Bloquear" class="btn btn-success btn-link btn-sm">
+                          <i class="material-icons">block</i>
+                        </button>
+                    </td>
+                      <td>
+                          <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                            <i class="material-icons">close</i>
+                          </button>
+                      </td>
+                    </tr>
+                  
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--FIN DE TABLA USUARIOS-->
+          </br>
+              <!-- INICIO TABLA ASEOS -->
+      <div class="content">
+          <div class="container-fluid">
+            <div class="row">
                 </div>
-               <!-- TABLA IPEEPEEARS -->
-                    <div class="card-body">
-                        <div class="tab-content">
-                              <table class="table table-hover">
-                                <thead class="text-success">
-                                  <th>ID</th>
-                                  <th>Nombre</th>
-                                  <th>Usuario</th>
-                                  <th>Comentarios</th>
-                                  <th>Editar</th>
-                                  <th>Eliminar</th>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>1</td>
-                                    <td>Elena</td>
-                                    <td>Helen12</td>
-                                    <td align="center">6</td>
-                                    <td>
-                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-success btn-link btn-sm">
-                                          <i class="material-icons">edit</i>
-                                        </button> 
-                                    </td>
-                                    <td>
-                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
-                                          <i class="material-icons">close</i>
-                                        </button>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>2</td>
-                                    <td>Lucía</td>
-                                    <td>Luluu</td>
-                                    <td align="center">3</td>
-                                    <td>
-                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-success btn-link btn-sm">
-                                          <i class="material-icons">edit</i>
-                                        </button> 
-                                    </td>
-                                    <td>
-                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
-                                          <i class="material-icons">close</i>
-                                        </button>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>3</td>
-                                    <td>Carlos</td>
-                                    <td>Charliee2</td>
-                                    <td align="center">5</td>
-                                    <td>
-                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-success btn-link btn-sm">
-                                          <i class="material-icons">edit</i>
-                                        </button> 
-                                    </td>
-                                    <td>
-                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
-                                          <i class="material-icons">close</i>
-                                        </button>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>4</td>
-                                    <td>Andrés</td>
-                                    <td>andca56</td>
-                                    <td align="center">8</td>
-                                    <td>
-                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-success btn-link btn-sm">
-                                          <i class="material-icons">edit</i>
-                                        </button> 
-                                    </td>
-                                    <td>
-                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
-                                          <i class="material-icons">close</i>
-                                        </button>
-                                    </td>
-                                  </tr> 
-                                  
+              </div>
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header card-header-warning">
+                    <h4 class="card-title mt-0"> Últimos baños registrados</h4>
+                    <p class="card-category"> Gestión de baños</p>
+                     <!-- boton añadir -->
+                    <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px" rel="tooltip" title="Ver más baños" onclick="window.location.assign('aseos.html')">
+                      <span class="mdc-fab__icon material-icons">remove_red_eye</span>
+                    </button>
+                    <!-- fin añadir boton -->
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-hover">
+                          <thead class=" text-warning" align="center">
+                          <th>
+                            ID
+                          </th>
+                          <th>
+                            Nombre
+                          </th>
+                          <th>
+                            Calle
+                          </th>
+                          <th>
+                            Número
+                          </th>
+                          <th>
+                            Ciudad
+                          </th>
+                          <th>
+                            Creador
+                          </th>
+                          <th>
+                            Web
+                          </th>
+                          <th>
+                            Valoración
+                          </th>
+                          <th>
+                            Editar
+                          </th>
+                          <th>
+                            Bloquear
+                          </th>
+                          <th>
+                            Eliminar
+                          </th>
+                        </thead>
+                        <tbody align="center">
+                          <tr>
+                            <td>
+                              1
+                            </td>
+                            <td>
+                              Bar Paco
+                            </td>
+                            <td>
+                              C/Don Ramón de la Cruz
+                            </td>
+                            <td align="center">
+                               7
+                            </td>
+                            <td>
+                              Sevilla
+                            </td>
+                            <td>
+                              Charliee2
+                            </td>
+                            <td>
+                              barpaco.com
+                            </td>
+                            <td align="center">
+                              5
+                            </td>
+                          <td>
+                              <button type="button" rel="tooltip" title="Editar" class="btn btn-warning btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button> 
+                          </td>
+                          <td>
+                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-warning btn-link btn-sm">
+                              <i class="material-icons">block</i>
+                            </button>
+                        </td>
+                          <td>
+                              <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                          </td>  
+                          </tr>
+                          <tr>
+                            <td>
+                              2
+                            </td>
+                            <td>
+                              Xanadú
+                            </td>
+                            <td>
+                              C/Puerto de Navacerrada
+                            </td>
+                            <td align="center">
+                              km 23
+                            </td>
+                            <td>
+                              Madrid
+                            </td>
+                            <td>
+                              andca56
+                            </td>
+                            <td>
+                             intuxanadu.com
+                            </td>
+                            <td align="center">
+                              4.3
+                            </td>
+                            <td>
+                              <button type="button" rel="tooltip" title="Editar" class="btn btn-warning btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button> 
+                          </td>
+                          <td>
+                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-warning btn-link btn-sm">
+                              <i class="material-icons">block</i>
+                            </button>
+                        </td>
+                          <td>
+                              <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                          </td>
+                          </tr>
+                          <tr>
+                             <td>
+                              3
+                            </td>
+                            <td>
+                              Baño portátil
+                            </td>
+                            <td>
+                              C/Ferrocarril
+                            </td>
+                            <td align="center">
+                              2
+                            </td>
+                            <td>
+                              Madrid
+                            </td>
+                            <td>
+                             Helen12
+                            </td>
+                            <td>
+                             
+                            </td>
+                            <td align="center">
+                              3
+                            </td>
+                            <td>
+                              <button type="button" rel="tooltip" title="Editar" class="btn btn-warning btn-link btn-sm">
+                                <i class="material-icons">edit</i>
+                              </button> 
+                          </td>
+                          <td>
+                            <button type="button" rel="tooltip" title="Bloquear" class="btn btn-warning btn-link btn-sm">
+                              <i class="material-icons">block</i>
+                            </button>
+                        </td>
+                          <td>
+                              <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm">
+                                <i class="material-icons">close</i>
+                              </button>
+                          </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              4
+                            </td>
+                            <td>
+                              Casa Manoli
+                            </td>
+                            <td>
+                              C/ Grecia
+                            </td>
+                            <td align="center">
+                              14
+                            </td>
+                            <td>
+                              Cuenca
+                            </td>
+                            <td>
+                             Peet 
+                            </td>
+                            <td>
+                              Casamanoli.es
+                            </td>
+                            <td align="center">
+                              2
+                            </td>
+                            <td>
+                                <button type="button" rel="tooltip" title="Editar" class="btn btn-warning btn-link btn-sm" >
+                                  <i class="material-icons">edit</i>
+                                </button> 
+                            </td>
+                            <td>
+                              <button type="button" rel="tooltip" title="Bloquear" class="btn btn-warning btn-link btn-sm" >
+                                <i class="material-icons">block</i>
+                              </button>
+                          </td>
+                            <td>
+                                <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-link btn-sm" >
+                                  <i class="material-icons">close</i>
+                                </button>
+                            </td>
+                          </tr>
                         </tbody>
                       </table>
                     </div>
                   </div>
                 </div>
-            </div>
-            <!-- TABLA DE BAÑOS -->
-            <div class="col-lg-6 col-md-12">
-              <div class="card">
-                <div class="card-header card-header-warning">
-                  <h4 class="card-title">Baños</h4>
-                  <p class="card-category">Baños añadidos recientemente</p>
-                  <!-- Botón añadir -->
-                  <button class="mdc-fab app-fab--absolute" aria-label="Create" style="top: 10px" rel="tooltip" title="Añadir" onclick="window.location.assign('../../Login - copia.html')">
-                    <span class="mdc-fab__icon material-icons">add</span>
-                  </button>
-                  <!-- Fin botón añadir -->
-                </div>
-                <div class="card-body table-responsive">
-                  <table class="table table-hover">
-                    <thead class="text-warning">
-                      <th>ID</th>
-                      <th>Nombre</th>
-                      <th>Usuario</th>
-                      <th>Permisos</th>
-                      <th>Editar</th>
-                     <th>Eliminar</th>
-                   </thead>
-                         <tbody>
-                          <tr>
-                              <td>1</td>
-                              <td>Raquel</td>
-                              <td>Rachel</td>
-                              <td>rachel@gmail.com</td>
-                              <td>
-                                 <button type="button" rel="tooltip" title="Edit Task" class="btn btn-warning btn-link btn-sm">
-                                   <i class="material-icons">edit</i>
-                                </button> 
-                              </td>
-                              <td>
-                                 <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
-                                   <i class="material-icons">close</i>
-                                 </button>
-                             </td>
-                           </tr>
-                           <tr>
-                               <td>2</td>
-                               <td>Laura</td>
-                               <td>Laimon</td>
-                               <td>laimon@gmail.com</td>
-                               <td>
-                                   <button type="button" rel="tooltip" title="Edit Task" class="btn btn-warning btn-link btn-sm">
-                                     <i class="material-icons">edit</i>
-                                   </button> 
-                               </td>
-                               <td>
-                                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
-                                     <i class="material-icons">close</i>
-                                  </button>
-                               </td>
-                            </tr>
-                            <tr>
-                              <td>3</td>
-                              <td>Eloy</td>
-                              <td>Eloycito</td>
-                              <td>Eloycito@gmail.com</td>
-                              <td>
-                                 <button type="button" rel="tooltip" title="Edit Task" class="btn btn-warning btn-link btn-sm">
-                                     <i class="material-icons">edit</i>
-                                 </button> 
-                              </td>
-                              <td>
-                                 <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
-                                    <i class="material-icons">close</i>
-                                 </button>
-                              </td>
-                    </tbody>
-                  </table>
-                </div>
               </div>
             </div>
           </div>
         </div>
-        
-      </div>
+        <!-- FIN TABLA ASEOS-->
 
       <!-- FOOTER QUE NO NECESITAMOS -->
 
@@ -915,9 +1211,12 @@
   </script>
   <!-- FUNCIÓN CALENDARIO -->
   <script>
-    $(function () {
-    $("#datepicker").datepicker();
-    });
+   $(function () {
+    $.datepicker.setDefaults($.datepicker.regional["es"]);
+    $("#datepicker").datepicker({
+    firstDay: 1
+  });
+  });
     </script>
 <!-- FIN FUNCIÓN CALENDARIO -->
 </body>
