@@ -664,14 +664,25 @@ footer {
     .reserve-seat-block {
       text-align: center; } }
 
-.reserve-rating {
+.reserve-rating,.reserve-rating-orange,
+.reserve-rating-red {
   font-size: 23px;
   background: #46cd38;
-  padding: 10px 14px;
+  padding: 14px;
   color: #fff;
-  border-radius: 3px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
   display: inline-block;
   vertical-align: top; }
+
+.reserve-rating-orange{
+  background: #ffae00 !important
+}
+.reserve-rating-red {
+  background: #ff7474 !important
+}
 
 .review-btn {
   display: inline-block;
@@ -686,7 +697,7 @@ footer {
   .review-btn span {
     display: block;
     color: #8a8e96;
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 3px; }
   .review-btn .btn-outline-danger {
     color: #eab924;
@@ -694,17 +705,6 @@ footer {
     .review-btn .btn-outline-danger:hover {
       color: #fff;
       background: #eab924; }
-
-.reserve-btn {
-  display: inline-block;
-  vertical-align: top; }
-  @media (max-width: 768px) {
-    .reserve-btn {
-      margin: -7px 0 0; } }
-  @media (max-width: 576px) {
-    .reserve-btn {
-      margin: 0 0 0;
-      width: 100%; } }
 
 .custom-checkbox {
   color: #737882;
@@ -1151,4 +1151,22 @@ z-index: 999;
 .toggle-off.btn-xs{padding-left:.8rem}
 /* FIN boton checkbox tipo switch para valorar baños */
 
-/*# sourceMappingURL=style.css.map */
+/* boton notas detalle */
+.customer-rating {
+  background: #46cd38;
+  padding: 14px;
+  float: right;
+  font-size: 23px;
+  color: #fff;
+  border-radius: 50% !important; 
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+
+.customer-rating-red {
+  background: #ff7474!important
+/* fin boton notas detalle */
+
+
+/* # sourceMappingURL=style.css.map 
