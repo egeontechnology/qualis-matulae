@@ -16864,7 +16864,7 @@ label {
 
 .card [class*="card-header-"],
 .card[class*="bg-"] {
-  color: #fff;
+  /* color: #fff; */
 }
 
 .card [class*="card-header-"] .card-title a,
