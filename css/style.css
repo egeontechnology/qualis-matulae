@@ -74,10 +74,6 @@ p {
 .nav-menu-2 {
   position: inherit; }
 
-.navbar {
-  padding: .5rem 0;
-  }
-
 .navbar-brand {
   font-size: 31px; }
 
@@ -969,7 +965,7 @@ footer {
   .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 9;
     left: 0;
     top: 0;
     width: 100%;
@@ -1000,7 +996,6 @@ footer {
   background-color: #fefefe;
   height: 93%;
   margin: auto 3% auto 3%;
-  padding: auto 3% 7% 3%;
   border-radius:.3rem;
 }
 
