@@ -42,17 +42,91 @@
                 <div class="row">
                     <div class="col-md-12">
                         <nav class="navbar navbar-expand-lg navbar-light">
-                                <a class="navbar-brand" href="inicio.html"><img src="images/logoipeepee.png" class="img-fluid" alt="ipeepee" style="width: 200px"/></a>
-                                <!-- Prueba de usuario con desplegable para cerrar sesión-->
+                          <a class="navbar-brand" href="inicio.html"><img src="images/logoipeepee.png" class="img-fluid" alt="ipeepee" style="width: 200px"/></a>
+                          <ul class="nav-item">
+                            <a class="nav-link" href="#">
+                              <i onclick="document.getElementById('modal-wrapper').style.display='block'" class="fa fa-user fa-2x" style="color:ivory" id="btn-1"></i>
+                            </a>
+                          </ul>
+                          <!-- El popup-->
+                          <div id="modal-wrapper" class="modal" >
+                                      <form class="modal-content animate "> <!-- action="/action_page.php">-->
+                                        <!-- contenido dentro del popup-->
+                                        <div style="padding: 20px" id="form-olvidado">
+                                          <form accept-charset="UTF-8" role="form" name="login-form" id="login-form" method="post">
+                                            <fieldset>
+                                              <div class="imgcontainer">
+                                                <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp" style="font-size: 40px">&times;</span>
+                                                <h4 style="text-align:center">ENTRAR</h4>
+                                              </div>
+                                              <div class="form-group input-group">
+                                                <span class="input-group-addon">
+                                                  <i class="fa fa-user fa-lg"></i>
+                                                </span>
+                                                <input class="form-control" placeholder="Usuario o email" name="email" type="email" required="" autofocus="">
+                                              </div>
+                                              <div class="form-group input-group">
+                                                  <span class="input-group-addon">
+                                                    <i class="fa fa-lock fa-lg"></i>
+                                                  </span>
+                                                  <input class="form-control" placeholder="Contraseña" name="password" type="password" value="" required="" id="">
+                                              </div>
+                                              <div class="form-group">
+                                                  <button onclick="login();return false;" class="btn btn-primary btn-block">Entrar</button>
+                                                  <p class="help-block">
+                                                    <input type="checkbox"> Recuérdame
+                                                    <a class="pull-right text-muted" href="#" id="olvidado"><small>¿Olvidaste tu contraseña?</small></a>
+                                                  </p>
+                                              </div>
+                                              <div> 
+                                                  <div class="dropdown-divider"></div>
+                                                  <br>
+                                                  <p style="text-align:center"> ¿No tienes cuenta? <a class="text-muted" href="Login - copia.html">Crear cuenta</a></p>
+                                              </div>
+                                            </fieldset>
+                                          </form>
+                                        </div>
+                                        <!-- olvido contraseña -->
+                                        <div style="display: none; padding: 20px" id="form-olvidado" class="modal-content">
+                                          <form accept-charset="UTF-8" role="form" id="login-recordar" method="post">
+                                            <fieldset>
+                                              <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp" style="font-size: 40px;margin-top: 10px;">&times;</span>
+                                              <div class="imgcontainer">  
+                                                <h4>¿Olvidaste tu contraseña?</h4>
+                                              </div>
+                                              <div class="form-group input-group">
+                                                <span class="help-block">
+                                                Si has olvidado tu contraseña, podemos enviarte un correo a la dirección con la que creaste tu cuenta.
+                                                </span>
+                                              </div>
+                                              <div class="form-group input-group">
+                                                  <span class="input-group-addon"> @</span>
+                                                  <input class="form-control" placeholder="Email" name="email" type="email" required="" >
+                                              </div>
+                                              <div>
+                                                <button type="submit" class="btn btn-primary btn-block" id="btn-olvidado">Enviar</button>
+                                                <p class="help-block">
+                                                  <a class="text-muted" href="#" id="acceso"><small>Accede a tu cuenta</small></a>
+                                                </p>
+                                              </div>
+                                            </fieldset>
+                                          </form>
+                                        </div>
+                                      </form>
+                          </div>
+                          <!-- boton Login cuando ya estás registrado -->
+                          <div style="display: none" id="btn-2">
                             <ul class="nav-item dropdown">
-                                <a class="nav-link" href="#" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-2x" style="color:white"></i></a>
-                                <li class="dropdown-menu dropdown-menu-right" style="right:0px !important">
-                                    <a class="dropdown-item" href="useredit.html">Perfil</a>
-                                    <a class="dropdown-item" href="Administrador/examples/dashboard.html">Ajustes</a>
-                                    <div class="dropdown-divider"></div> <!--separador-->
-                                    <a class="dropdown-item" href="#">Salir</a>
-                                </li>
+                              <a class="nav-link" href="#" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user fa-2x" style="color:white"></i>
+                              </a>
+                              <li class="dropdown-menu dropdown-menu-right" style="right:0px !important">
+                                <a class="dropdown-item" href="useredit.html">Perfil</a>
+                                <div class="dropdown-divider"></div> <!--separador-->
+                                <a class="dropdown-item" href="#" onclick="logout();return false;">Salir</a>
+                              </li>
                             </ul>
+                          </div>
                         </nav>
                      </div>
                 </div>
@@ -454,7 +528,7 @@
                   </div>
                   <div class="col-md-4">
                     <div>
-                      <input class="form-check-input" type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" data-offstyle="warning" data-on="<i class='fa fa-wheelchair'></i>  Accesible" data-off="<i class='fa fa-wheelchair'></i> accesible" data-width="136" data-height="36">
+                      <input class="form-check-input" type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" data-offstyle="warning" data-on="<i class='fa fa-wheelchair'></i>  Sin acceso" data-off="<i class='fa fa-wheelchair'></i> Accesible" data-width="136" data-height="36">
                     </div> 
                   </div>
                   <div class="col-md-4">
@@ -471,12 +545,12 @@
                   </div> -->
                   <div class="col-md-4">
                     <div>
-                      <input class="form-check-input" type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" data-offstyle="warning" data-on="sin cambiador" data-off="con cambiador" data-width="136" data-height="36">
+                      <input class="form-check-input" type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" data-offstyle="warning" data-on="Sin cambiador" data-off="Con cambiador" data-width="136" data-height="36">
                     </div> 
                   </div>
                   <div class="col-md-4">
                     <div>
-                      <input class="form-check-input" type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" data-offstyle="warning" data-on="<i class='fa fa-wifi'></i> wifi" data-off="<i class='fa fa-wifi'></i> wifi" data-width="136" data-height="36">
+                      <input class="form-check-input" type="checkbox" checked data-toggle="toggle" data-onstyle="secondary" data-offstyle="warning" data-on="<i class='fa fa-wifi'></i> Sin wifi" data-off="<i class='fa fa-wifi'></i> Con wifi" data-width="136" data-height="36">
                     </div> 
                   </div>
                 </div>
@@ -622,10 +696,10 @@
             </div>
             <div class="row">    
               <div class="contact-info">
-                <img src="images/map.jpg" class="img-fluid" alt="#">
-                            <!-- MAPA DEL SITIO (INTERACTIVO) -->
-                            <!-- <div class="mapouter"><div class="gmap_canvas"><iframe width="350" height="352" id="gmap_canvas" src="https://maps.google.com/maps?q=Partida%20Vines%2C%2016&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.org">embedgooglemap.org</a></div><style>.mapouter{position:relative;text-align:right;height:352px;width:350px;}.gmap_canvas {overflow:hidden;background:none!important;height:352px;width:350px;}</style></div> -->
-    
+                <!-- <img src="images/map.jpg" class="img-fluid" alt="#"> -->
+                <div class="mapouter"><div class="gmap_canvas">
+                  <iframe width="380" height="274" id="gmap_canvas" src="https://maps.google.com/maps?q=Partida%20Vi%C3%B1es%2C%2016%2003518%20T%C3%A1rbena%20Alicante&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:274px;width:380px;}.gmap_canvas {overflow:hidden;background:none!important;height:274px;width:380px;}</style>
+                </div>
                 <div class="address">
                   <span class="icon-location-pin"></span>
                   <p> Partida Viñes, 16 <br> 03518 Tárbena <br> Alicante</p>
@@ -796,8 +870,7 @@
                 prevEl: '.swiper-button-prev',
             },
         });
-    </script>
-    <script>
+ 
         if ($('.image-link').length) {
             $('.image-link').magnificPopup({
                 type: 'image',
@@ -814,6 +887,42 @@
                 }
             });
         }
+
+    // Funcion que al comprobar usuario cambia el boton de login 
+      function login(){
+        if (document.forms[0]["email"].value=='usuario1@gmail.es' && document.forms[0]["password"].value=='1234'){ 
+          $('#btn-1').hide();
+          $('#modal-wrapper').hide();
+          $('#btn-2').show();
+         }else{ 
+          alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+        } 
+      } 
+    // Funcion que al salir del usuario cambia el boton de login al de registrarse 
+      function logout(){
+        $('#btn-2').hide(); 
+        $('#btn-1').show(); 
+      }
+
+    // Funcion que hace que si el usuario clicka fuera del popup, se cierre
+      var modal = document.getElementById('modal-wrapper');
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+          }
+      }
+
+      $(document).ready(function() {
+        $('#olvidado').click(function(e) {
+        e.preventDefault();
+        $('div#form-olvidado').toggle('500');
+      });
+
+      $('#acceso').click(function(e) {
+        e.preventDefault();
+        $('div#form-olvidado').toggle('500');
+        });
+      });
     </script>
 </body>
 
