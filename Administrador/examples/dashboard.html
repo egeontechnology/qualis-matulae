@@ -143,18 +143,34 @@
                     </div>
                   </li>
               <!-- INTENTO CALENDARIO -->
-              <li class="nav-item dropdown">
-                  <a class="nav-link" href="#pablo" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                    <i class="material-icons">date_range</i>
+              <!-- <li class="nav-item dropdown">
+                  <a class="nav-link" href="#pablo" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                    <i class="material-icons">date_range</i>
                     <p class="d-lg-none d-md-block">
                       Fechas
                     </p>
                   </a>
                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="datepicker">
-                  <div id='datepicker'>
+                  <div id='datetimepicker1'>
                   </div>
                   </div>
-              </li>
+              </li> -->
               <!-- FIN INTENTO CALENDARIO -->
+              
+              <!-- INTENTO CALENDARIO2 -->
+              <div class="container">
+                  <div class="row">
+                     <div class="form-group">
+                       <div class='input-group date' id='datetimepicker5'>
+                          <input type='text' class="form-control" />
+                            <span class="input-group-addon">
+                              <span class="material-icons">date_range</span>
+                            </span>
+                       </div>
+                    </div>
+                  </div>
+              </div>
+           <!-- FIN INTENTO CALENDARIO2 -->
             </ul>
           </div>
         </div>
@@ -1021,6 +1037,18 @@
   });
   });
     </script>
+    <script src="../assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+          $('#datetimepicker5').datetimepicker({
+              defaultDate: "11/10/2019",
+              disabledDates: [
+                  moment("11/10/2018"),
+                  new Date(31, 12 - 1, 2019),
+              ]
+          });
+      });
+  </script>
 <!-- FIN FUNCIÓN CALENDARIO -->
 </body>
 
