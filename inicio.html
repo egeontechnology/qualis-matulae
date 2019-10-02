@@ -69,9 +69,7 @@
                                         <input class="form-control" placeholder="Contraseña" name="password" type="password" value="" required="" id="">
                                     </div>
                                     <div class="form-group">
-                                        <button onclick="Login()" class="btn btn-primary btn-block">Entrar</button>
-                                       
-
+                                        <button onclick="login();return false;" class="btn btn-primary btn-block">Entrar</button>
                                         <p class="help-block">
                                           <input type="checkbox"> Recuérdame
                                           <a class="pull-right text-muted" href="#" id="olvidado"><small>¿Olvidaste tu contraseña?</small></a>
@@ -142,7 +140,7 @@
                                       <a class="dropdown-item" href="Administrador/examples/user.html">Perfil</a>
                                       <a class="dropdown-item" href="Administrador/examples/dashboard.html">Ajustes</a>
                                       <div class="dropdown-divider"></div> <!--separador-->
-                                      <a class="dropdown-item" href="#">Salir</a>
+                                      <a class="dropdown-item" href="#" onclick="logout();return false;">Salir</a>
                                   </li>
                               </ul>
                           </div>
@@ -1205,19 +1203,22 @@
         $('.fixed').removeClass('is-sticky');
 
     };
-});
+});                             
 // <!-- funcion que al comprobar usuario cambia el boton de login -->
-                                          function Login(){
-                                            if (document.forms[0]["email"].value=='usuario1@gmail.es' && document.forms[0]["password"].value=='1234'){ 
-                                                $('#btn-1').hide();
-                                                $('#btn-2').show();
-                                                alert('aqui');
-                                            }else{ 
-                                            alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
-                                             } 
-                                          } 
-                                        
-                                         
+      function login(){
+        if (document.forms[0]["email"].value=='usuario1@gmail.es' && document.forms[0]["password"].value=='1234'){ 
+          $('#btn-1').hide();
+          $('#modal-wrapper').hide();
+          $('#btn-2').show();
+         }else{ 
+          alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+        } 
+      } 
+// <!-- funcion que al salir del usuario cambia el boton de login al de registrarse -->
+      function logout(){
+        $('#btn-2').hide(); 
+        $('#btn-1').show(); 
+      }  
     </script>
   </body>
 
