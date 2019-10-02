@@ -41,112 +41,94 @@
         <div class="container-fluid fixed" style="border-bottom-width: 0px">
           <div class="row">
             <div class="col-md-12">
-                        <nav class="navbar navbar-expand-lg navbar-light">
-                          <a class="navbar-brand" href="inicio.html" style="opacity:initial"><img src="images/logoipeepee.png" class="img-fluid" alt="ipeepee" style="width: 200px"/></a>
-                          <!-- boton Login -->
-                          <i onclick="document.getElementById('modal-wrapper').style.display='block'" class="fa fa-user fa-2x" style="color:ivory" id="btn-1"></i>
-                          <!-- El popup-->
-                          <div id="modal-wrapper" class="modal" >
-                            <form class="modal-content animate "> <!-- action="/action_page.php">-->
-                              <!-- contenido dentro del popup-->
-                              <div style="padding: 20px" id="form-olvidado">
-                                <form accept-charset="UTF-8" role="form" name="login-form" id="login-form" method="post">
-                                  <fieldset>
-                                    <div class="imgcontainer">
-                                      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp" style="font-size: 40px">&times;</span>
-                                      <h4 style="text-align:center">ENTRAR</h4>
-                                    </div>
-                                    <div class="form-group input-group">
-                                      <span class="input-group-addon">
-                                        <i class="fa fa-user fa-lg"></i>
-                                      </span>
-                                      <input class="form-control" placeholder="Usuario o email" name="email" type="email" required="" autofocus="">
-                                    </div>
-                                    <div class="form-group input-group">
-                                        <span class="input-group-addon">
-                                          <i class="fa fa-lock fa-lg"></i>
-                                        </span>
-                                        <input class="form-control" placeholder="Contraseña" name="password" type="password" value="" required="" id="">
-                                    </div>
-                                    <div class="form-group">
-                                        <button onclick="Login()" class="btn btn-primary btn-block">Entrar</button>
-                                       
-
-                                        <p class="help-block">
-                                          <input type="checkbox"> Recuérdame
-                                          <a class="pull-right text-muted" href="#" id="olvidado"><small>¿Olvidaste tu contraseña?</small></a>
-                                        </p>
-                                    </div>
-                                    <div> 
-                                        <div class="dropdown-divider"></div>
-                                        <br>
-                                        <p style="text-align:center"> ¿No tienes cuenta? <a class="text-muted" href="Login - copia.html">Crear cuenta</a></p>
-                                    </div>
-                                  </fieldset>
-                                </form>
-                              </div>
-                              <!-- olvido contraseña -->
-                              <div style="display: none; padding: 20px" id="form-olvidado" class="modal-content">
-                                <form accept-charset="UTF-8" role="form" id="login-recordar" method="post">
-                                  <fieldset>
-                                    <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp" style="font-size: 40px;margin-top: 10px;">&times;</span>
-                                    <div class="imgcontainer">  
-                                      <h4>¿Olvidaste tu contraseña?</h4>
-                                    </div>
-                                    <div class="form-group input-group">
-                                      <span class="help-block">
-                                      Si has olvidado tu contraseña, podemos enviarte un correo a la dirección con la que creaste tu cuenta.
-                                      </span>
-                                    </div>
-                                    <div class="form-group input-group">
-                                        <span class="input-group-addon"> @</span>
-                                        <input class="form-control" placeholder="Email" name="email" type="email" required="" >
-                                    </div>
-                                    <div>
-                                      <button type="submit" class="btn btn-primary btn-block" id="btn-olvidado">Enviar</button>
-                                      <p class="help-block">
-                                        <a class="text-muted" href="#" id="acceso"><small>Accede a tu cuenta</small></a>
-                                      </p>
-                                    </div>
-                                  </fieldset>
-                                </form>
-                              </div>
-                            </form>
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="inicio.html" style="opacity:initial"><img src="images/logoipeepee.png" class="img-fluid" alt="ipeepee" style="width: 200px"/></a>
+                <!-- boton Login sin estar registrado -->
+                <ul class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i onclick="document.getElementById('modal-wrapper').style.display='block'" class="fa fa-user fa-2x" style="color:ivory" id="btn-1"></i>
+                  </a>
+                </ul>
+                <!-- El popup-->
+                <div id="modal-wrapper" class="modal" >
+                  <form class="modal-content animate "> <!-- action="/action_page.php">-->
+                    <!-- contenido dentro del popup-->
+                    <div style="padding: 20px" id="form-olvidado">
+                      <form accept-charset="UTF-8" role="form" name="login-form" id="login-form" method="post">
+                        <fieldset>
+                          <div class="imgcontainer">
+                            <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp" style="font-size: 40px">&times;</span>
+                            <h4 style="text-align:center">ENTRAR</h4>
                           </div>
-                          <!-- Funcion que hace que si el usuario clicka fuera del popup, se cierre  -->
-                          <script>
-                            var modal = document.getElementById('modal-wrapper');
-                              window.onclick = function(event) {
-                              if (event.target == modal) {
-                              modal.style.display = "none";
-                              }
-                            }
-
-                            $(document).ready(function() {
-                              $('#olvidado').click(function(e) {
-                              e.preventDefault();
-                              $('div#form-olvidado').toggle('500');
-                              });
-
-                              $('#acceso').click(function(e) {
-                                e.preventDefault();
-                                $('div#form-olvidado').toggle('500');
-                                });
-                              });
-                          </script>
-                          <!-- boton login que sale solo cuando estas registrado -->
-                          <div style="display: none" id="btn-2">
-                              <ul class="nav-item dropdown">
-                                  <a class="nav-link" href="#" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-2x" style="color:white"></i></a>
-                                  <li class="dropdown-menu dropdown-menu-right" style="right:0px !important">
-                                      <a class="dropdown-item" href="Administrador/examples/user.html">Perfil</a>
-                                      <a class="dropdown-item" href="Administrador/examples/dashboard.html">Ajustes</a>
-                                      <div class="dropdown-divider"></div> <!--separador-->
-                                      <a class="dropdown-item" href="#">Salir</a>
-                                  </li>
-                              </ul>
+                          <div class="form-group input-group">
+                            <span class="input-group-addon">
+                              <i class="fa fa-user fa-lg"></i>
+                            </span>
+                            <input class="form-control" placeholder="Usuario o email" name="email" type="email" required="" autofocus="">
                           </div>
-                        </nav>
+                          <div class="form-group input-group">
+                            <span class="input-group-addon">
+                              <i class="fa fa-lock fa-lg"></i>
+                            </span>
+                            <input class="form-control" placeholder="Contraseña" name="password" type="password" value="" required="" id="">
+                          </div>
+                          <div class="form-group">
+                            <button onclick="login();return false;" class="btn btn-primary btn-block">Entrar</button>
+                            <p class="help-block">
+                              <input type="checkbox"> Recuérdame
+                              <a class="pull-right text-muted" href="#" id="olvidado"><small>¿Olvidaste tu contraseña?</small></a>
+                            </p>
+                          </div>
+                          <div> 
+                            <div class="dropdown-divider"></div>
+                            <br>
+                            <p style="text-align:center"> ¿No tienes cuenta? <a class="text-muted" href="Login - copia.html">Crear cuenta</a></p>
+                          </div>
+                        </fieldset>
+                      </form>
+                    </div>
+                    <!-- olvido contraseña -->
+                    <div style="display: none; padding: 20px" id="form-olvidado" class="modal-content">
+                      <form accept-charset="UTF-8" role="form" id="login-recordar" method="post">
+                        <fieldset>
+                          <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp" style="font-size: 40px;margin-top: 10px;">&times;</span>
+                          <div class="imgcontainer">  
+                            <h4>¿Olvidaste tu contraseña?</h4>
+                          </div>
+                          <div class="form-group input-group">
+                            <span class="help-block">
+                            Si has olvidado tu contraseña, podemos enviarte un correo a la dirección con la que creaste tu cuenta.
+                            </span>
+                          </div>
+                          <div class="form-group input-group">
+                            <span class="input-group-addon"> @</span>
+                            <input class="form-control" placeholder="Email" name="email" type="email" required="" >
+                          </div>
+                          <div>
+                            <button type="submit" class="btn btn-primary btn-block" id="btn-olvidado">Enviar</button>
+                            <p class="help-block">
+                              <a class="text-muted" href="#" id="acceso"><small>Accede a tu cuenta</small></a>
+                            </p>
+                          </div>
+                        </fieldset>
+                      </form>
+                    </div>
+                  </form>
+                </div>
+                <!-- boton Login cuando ya estás registrado -->
+                <div style="display: none" id="btn-2">
+                  <ul class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-user fa-2x" style="color:white"></i>
+                    </a>
+                    <li class="dropdown-menu dropdown-menu-right" style="right:0px !important">
+                      <a class="dropdown-item" href="useredit.html">Perfil</a>
+                      <div class="dropdown-divider"></div> <!--separador-->
+                      <a class="dropdown-item" href="#" onclick="logout();return false;">Salir</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
             </div>
           </div>
         </div>
@@ -805,20 +787,11 @@
             </div>
             <!--...hasta aquí-->
             <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <div class="featured-btn-wrap">
-                        <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo" id="botonMas" onclick="botonMas()">VER MÁS</button>
-                      <!-- al hacer click cambie el texto a ver menores -->
-                      <script>
-                          function botonMas() {
-                            var uno = document.getElementById('botonMas');
-                            if (uno.innerHTML == 'VER MENOS') 
-                                uno.innerHTML = 'VER MÁS';
-                            else uno.innerHTML = 'VER MENOS'; 
-                          }
-                          </script>
-                      </div>
+              <div class="col-md-4">
+                <div class="featured-btn-wrap">
+                  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo" id="botonMas" onclick="botonMas()">VER MÁS</button>
                 </div>
+              </div>
             </div>    
         </div>
     </section>
@@ -1132,7 +1105,7 @@
                   <!--función para ocultar botón-->
                   <script>
                     $(document).ready(function(){
-                      $("button").click(function(){
+                      $("#hide").click(function(){
                       $("#hide").hide();
                       });
                     });
@@ -1145,7 +1118,6 @@
     <!--//END CONTACTO -->
 
     <!-- PLUGIN de las cookies -->
-          <!--Icono de una cookie: &#x1F36A;-->
     <div class="alert alert-dismissible text-center cookiealert" role="alert">
       <div class="cookiealert-container">
         <p>Este sitio web utiliza cookies para ofrecer un mejor servicio. Al utilizar este sitio web, aceptas dicho uso. Consulta nuestra <a href="http://cookiesandyou.com/" target="_blank">Política de cookies.</a></p> 
@@ -1195,30 +1167,57 @@
     
     <script>
     $(window).scroll(function() {
-    // 100 = The point you would like to fade the nav in.
+// 100 = The point you would like to fade the nav in.
+      if ($(window).scrollTop() > 10) {
+          $('.fixed').addClass('is-sticky');
+      } else {
+          $('.fixed').removeClass('is-sticky');
+      };
+    });  
 
-    if ($(window).scrollTop() > 10) {
+// Funcion que al comprobar usuario cambia el boton de login 
+      function login(){
+        if (document.forms[0]["email"].value=='usuario1@gmail.es' && document.forms[0]["password"].value=='1234'){ 
+          $('#btn-1').hide();
+          $('#modal-wrapper').hide();
+          $('#btn-2').show();
+         }else{ 
+          alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+        } 
+      } 
+// Funcion que al salir del usuario cambia el boton de login al de registrarse 
+      function logout(){
+        $('#btn-2').hide(); 
+        $('#btn-1').show(); 
+      }
 
-        $('.fixed').addClass('is-sticky');
+// Funcion que hace que si el usuario clicka fuera del popup, se cierre
+                   
+      var modal = document.getElementById('modal-wrapper');
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+          }
+      }
 
-    } else {
+      $(document).ready(function() {
+        $('#olvidado').click(function(e) {
+        e.preventDefault();
+        $('div#form-olvidado').toggle('500');
+      });
 
-        $('.fixed').removeClass('is-sticky');
-
-    };
-});
-// <!-- funcion que al comprobar usuario cambia el boton de login -->
-                                          function Login(){
-                                            if (document.forms[0]["email"].value=='usuario1@gmail.es' && document.forms[0]["password"].value=='1234'){ 
-                                                $('#btn-1').hide();
-                                                $('#btn-2').show();
-                                                alert('aqui');
-                                            }else{ 
-                                            alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
-                                             } 
-                                          } 
-                                        
-                                         
+      $('#acceso').click(function(e) {
+        e.preventDefault();
+        $('div#form-olvidado').toggle('500');
+        });
+      });
+// Función para ocultar botón de escribenos al entrar al fomrulario
+      $(document).ready(function(){
+        $("#hide").click(function(){
+        $("#hide").hide();
+        });
+      });
+       
     </script>
   </body>
 
