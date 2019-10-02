@@ -21,6 +21,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <link rel="stylesheet" href="../assets/css/chartist.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
    Dashboard iPeePee
@@ -1087,26 +1088,36 @@
     
   </script>
   <!-- FUNCIÓN CALENDARIO -->
-  <script>
+  <!-- <script>
    $(function () {
     $.datepicker.setDefaults($.datepicker.regional["es"]);
     $("#datepicker").datepicker({
     firstDay: 1
   });
   });
-    </script>
+    </script> -->
     <script src="../assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript">
       $(function () {
+       
+    moment.locale('en', {
+        week: { dow: 1 } // Monday is the first day of the week
+    });
           $('#datetimepicker5').datetimepicker({
-              defaultDate: "11/10/2019",
+              defaultDate: new Date(),
               disabledDates: [
                   moment("11/10/2018"),
                   new Date(31, 12 - 1, 2019),
-              ]
+              ],
+              format:"DD-MM-YYYY"
           });
       });
   </script>
+          <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
 <!-- FIN FUNCIÓN CALENDARIO -->
 </body>
 
