@@ -84,9 +84,9 @@ CREATE TABLE `aseos` (
   `ciudad` varchar(65) DEFAULT NULL,
   `pais` varchar(55) DEFAULT NULL,
   `web` varchar(70) DEFAULT NULL,
-  `local` varchar(30) DEFAULT NULL,
+  `local` mediumtext,
   PRIMARY KEY (`idaseos`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -420,4 +420,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-10-02 16:11:37
+-- Dump completed on 2019-10-02 17:49:16
