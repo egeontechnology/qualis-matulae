@@ -20,6 +20,8 @@
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../../images/favicon-ipp.ico">
+  <link rel="stylesheet" href="../assets/css/chartist.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
     Baños iPeePee
@@ -32,12 +34,19 @@
   <link href="../assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
-  
+   <!-- CALENDARIO -->
+ <meta charset="utf-8" />
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+ <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+ <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+ <script src="jquery.ui.datepicker-es.js"></script>
+</head>
+<!-- FIN CALENDARIO -->
 </head>
 
 <body class="">
   <div class="wrapper ">
-    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-5.jpg">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -133,19 +142,20 @@
                       <a class="dropdown-item" href='../../inicio.html'>Salir</a>
                   </div>
                 </li>
-                <!-- INTENTO CALENDARIO -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#pablo" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                    <i class="material-icons">date_range</i>
-                      <p class="d-lg-none d-md-block">
-                        Fechas
-                      </p>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="datepicker">
-                    <div id='datepicker'>
+              <!-- INTENTO CALENDARIO2 -->
+              <div class="container">
+                  <div class="row">
+                     <div class="form-group">
+                       <div class='input-group date' id='datetimepicker5'>
+                          <input type='text' class="form-control" />
+                            <span class="input-group-addon">
+                              <span class="material-icons">date_range</span>
+                            </span>
+                       </div>
                     </div>
-                    </div>
-                </li>
-                <!-- FIN INTENTO CALENDARIO -->
+                  </div>
+              </div>
+           <!-- FIN INTENTO CALENDARIO2 -->
               </ul>
             </div>
           </div>
@@ -1052,6 +1062,30 @@
       });
     });
   </script>
+    <!-- FUNCIÓN CALENDARIO -->
+    <script src="../assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+       
+    moment.locale('en', {
+        week: { dow: 1 } // Monday is the first day of the week
+    });
+          $('#datetimepicker5').datetimepicker({
+              defaultDate: new Date(),
+              disabledDates: [
+                  moment("11/10/2018"),
+                  new Date(31, 12 - 1, 2019),
+              ],
+              format:"DD-MM-YYYY"
+          });
+      });
+  </script>
+          <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+<!-- FIN FUNCIÓN CALENDARIO -->
 </body>
 
 </html>
