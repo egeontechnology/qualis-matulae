@@ -42,6 +42,8 @@
  <script src="jquery.ui.datepicker-es.js"></script>
 </head>
 <!-- FIN CALENDARIO -->
+<!--LO QUE CREÍA QUE ERA NECESARIO PARA AÑADIR EL BOTÓN DE SUBIR IMAGEN-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body class="">
@@ -299,6 +301,18 @@
                         </div>
                       </div>
                     </div>
+
+                    <!-- INTENTO BOTÓN AÑADIR FOTO DE PERFIL -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                          <strong>Sube tu foto de perfil</strong><br>
+                          <form> <!-- action="/action_page.php">-->
+                            <input type="file" name="imagen" accept="image/*"  class="btn btn-primary pull-right">
+                          </form>
+                          <p><strong><br>Nota:</strong> Las imágenes no pueden pesar más de 2gb</p>
+                        </div>
+                      </div>
+                   <!-- FIN AÑADIR FOTO DE PERFIL -->
                     <button type="submit" class="btn btn-primary pull-right">Editar datos</button>
                     <div class="clearfix"></div>
                   </form>
