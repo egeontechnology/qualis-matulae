@@ -322,10 +322,7 @@
                           <td>
                            Recién reformado
                           </td>
-                          <td>
-                            <div style='height:100px; overflow:hidden;'></div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus augue ac ex vestibulum, et scelerisque urna dapibus. Etiam sagittis magna vitae arcu maximus mattis. Quisque ipsum risus, consectetur a cursus id, maximus malesuada nisi. Fusce quam odio, tristique vitae est in, porta blandit nunc. 
-                          
+                          <td id="mitexto" style='width:300px'>
                           </td>
                           <td align="center">
                             5
@@ -360,8 +357,7 @@
                           <td>
                           Asqueroso!!
                           </td>
-                          <td>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus augue ac ex vestibulum, et scelerisque urna dapibus. Etiam sagittis magna vitae arcu maximus mattis. Quisque ipsum risus, consectetur a cursus id, maximus malesuada nisi. Fusce quam odio, tristique vitae est in, porta blandit nunc. 
+                          <td id="mitexto" style='width:300px'>
                           </td>
                           <td align="center">
                             5
@@ -396,8 +392,7 @@
                           <td>
                           Baño limpio, trato horrible!
                           </td>
-                          <td>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus augue ac ex vestibulum, et scelerisque urna dapibus. Etiam sagittis magna vitae arcu maximus mattis. Quisque ipsum risus, consectetur a cursus id, maximus malesuada nisi. Fusce quam odio, tristique vitae est in, porta blandit nunc. 
+                          <td id="mitexto" style='width:300px'>
                           </td>
                           <td align="center">
                             5
@@ -791,9 +786,8 @@
       
       console.log(menos);
       
-      $('#mitexto').html(menos+'<span onclick="myFunction()" id="myBtn"><b>&nbsp;Ver más</b></span><span onclick="myFunction" id="dots"></span>')
-      
-      
+      $('#mitexto').html(menos+'<span id="dots">'+mas+'</span><span onclick="myFunction()" id="myBtn"><b>&nbsp;Ver más</b></span></p>')
+      myFunction();
       function myFunction() {
         var dots = document.getElementById("dots");
         var moreText = document.getElementById("more");
@@ -809,6 +803,7 @@
           moreText.style.display = "inline";
         }
       }
+      
       </script>
 </body>
 
