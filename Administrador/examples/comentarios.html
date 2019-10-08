@@ -19,7 +19,9 @@
 <head>
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="icon" type="image/png" href="../../images/favicon-ipp.ico">
+  <link rel="stylesheet" href="../assets/css/chartist.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
     Comentarios iPeePee
@@ -32,11 +34,23 @@
   <link href="../assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
+  <!-- VER MAS -->
+<style>
+#more {display: inline;}
+</style>
+ <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+ <!-- CALENDARIO -->
+ <meta charset="utf-8" />
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+ <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+ <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+</head>
+<!-- FIN CALENDARIO -->
 </head>
 
 <body class="">
   <div class="wrapper ">
-    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-5.jpg">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -168,7 +182,7 @@
     FIN BARRA SEARCH-->
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#pablo">
+          <a class="nav-link" href="./dashboard.html">
           <i class="material-icons">dashboard</i>
           <p class="d-lg-none d-md-block">
             Stats
@@ -203,19 +217,20 @@
             <a class="dropdown-item" href='../../inicio.html'>Salir</a>
         </div>
       </li>
-      <!-- INTENTO CALENDARIO -->
-      <li class="nav-item dropdown">
-          <a class="nav-link" href="#pablo" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                    <i class="material-icons">date_range</i>
-            <p class="d-lg-none d-md-block">
-              Fechas
-            </p>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="datepicker">
-          <div id='datepicker'>
-          </div>
-          </div>
-      </li>
-      <!-- FIN INTENTO CALENDARIO -->
+              <!-- INTENTO CALENDARIO2 -->
+              <div class="container">
+                  <div class="row">
+                     <div class="form-group">
+                       <div class='input-group date' id='datetimepicker5'>
+                          <input type='text' class="form-control" />
+                            <span class="input-group-addon">
+                              <span class="material-icons">date_range</span>
+                            </span>
+                       </div>
+                    </div>
+                  </div>
+              </div>
+           <!-- FIN INTENTO CALENDARIO2 -->
     </ul>
   </div>
 </div>
@@ -282,8 +297,7 @@
                           <td>
                             Super limpio
                           </td>
-                          <td>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus augue ac ex vestibulum, et scelerisque urna dapibus. Etiam sagittis magna vitae arcu maximus mattis. Quisque ipsum risus, consectetur a cursus id, maximus malesuada nisi. Fusce quam odio, tristique vitae est in, porta blandit nunc. 
+                          <td id="mitexto1" style='width:300px;'>
                           </td>
                           <td align="center">
                             5
@@ -318,8 +332,7 @@
                           <td>
                            Recién reformado
                           </td>
-                          <td>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus augue ac ex vestibulum, et scelerisque urna dapibus. Etiam sagittis magna vitae arcu maximus mattis. Quisque ipsum risus, consectetur a cursus id, maximus malesuada nisi. Fusce quam odio, tristique vitae est in, porta blandit nunc. 
+                          <td id="mitexto2" style='width:300px'>
                           </td>
                           <td align="center">
                             5
@@ -354,8 +367,7 @@
                           <td>
                           Asqueroso!!
                           </td>
-                          <td>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus augue ac ex vestibulum, et scelerisque urna dapibus. Etiam sagittis magna vitae arcu maximus mattis. Quisque ipsum risus, consectetur a cursus id, maximus malesuada nisi. Fusce quam odio, tristique vitae est in, porta blandit nunc. 
+                          <td id="mitexto3" style='width:300px'>
                           </td>
                           <td align="center">
                             5
@@ -390,18 +402,18 @@
                           <td>
                           Baño limpio, trato horrible!
                           </td>
+                          <td id="mitexto4" style='width:300px'>
+                          </td>
+                          <td align="center">
+                            5
+                          </td>
+                          <td align="center">
+                            5
+                          </td>
+                          <td align="center">
+                            5
+                          </td>
                           <td>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus augue ac ex vestibulum, et scelerisque urna dapibus. Etiam sagittis magna vitae arcu maximus mattis. Quisque ipsum risus, consectetur a cursus id, maximus malesuada nisi. Fusce quam odio, tristique vitae est in, porta blandit nunc. 
-                          </td>
-                          <td align="center">
-                            5
-                          </td>
-                          <td align="center">
-                            5
-                          </td>
-                          <td align="center">
-                            5
-                          </td>
                           <button type="button" rel="tooltip" title="Bloquear" class="btn btn-primary btn-link btn-sm">
                             <i class="material-icons">block</i>
                           </button>
@@ -455,111 +467,7 @@
           </div>
         </div>
       </div>
-      <footer class="footer">
-        <div class="container-fluid">
-          <nav class="float-left">
-            <ul>
-              <li>
-                <a href="https://www.creative-tim.com">
-                  Creative Tim
-                </a>
-              </li>
-              <li>
-                <a href="https://creative-tim.com/presentation">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="http://blog.creative-tim.com">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="https://www.creative-tim.com/license">
-                  Licenses
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="copyright float-right">
-            &copy;
-            <script>
-              document.write(new Date().getFullYear())
-            </script>, made with <i class="material-icons">favorite</i> by
-            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
-          </div>
-        </div>
-      </footer>
-    </div>
-  </div>
-  <div class="fixed-plugin">
-    <div class="dropdown show-dropdown">
-      <a href="#" data-toggle="dropdown">
-        <i class="fa fa-cog fa-2x"> </i>
-      </a>
-      <ul class="dropdown-menu">
-        <li class="header-title"> Sidebar Filters</li>
-        <li class="adjustments-line">
-          <a href="javascript:void(0)" class="switch-trigger active-color">
-            <div class="badge-colors ml-auto mr-auto">
-              <span class="badge filter badge-purple" data-color="purple"></span>
-              <span class="badge filter badge-azure" data-color="azure"></span>
-              <span class="badge filter badge-green" data-color="green"></span>
-              <span class="badge filter badge-warning" data-color="orange"></span>
-              <span class="badge filter badge-danger" data-color="danger"></span>
-              <span class="badge filter badge-rose active" data-color="rose"></span>
-            </div>
-            <div class="clearfix"></div>
-          </a>
-        </li>
-        <li class="header-title">Images</li>
-        <li class="active">
-          <a class="img-holder switch-trigger" href="javascript:void(0)">
-            <img src="../assets/img/sidebar-1.jpg" alt="">
-          </a>
-        </li>
-        <li>
-          <a class="img-holder switch-trigger" href="javascript:void(0)">
-            <img src="../assets/img/sidebar-2.jpg" alt="">
-          </a>
-        </li>
-        <li>
-          <a class="img-holder switch-trigger" href="javascript:void(0)">
-            <img src="../assets/img/sidebar-3.jpg" alt="">
-          </a>
-        </li>
-        <li>
-          <a class="img-holder switch-trigger" href="javascript:void(0)">
-            <img src="../assets/img/sidebar-4.jpg" alt="">
-          </a>
-        </li>
-        <li class="button-container">
-          <a href="https://www.creative-tim.com/product/material-dashboard" target="_blank" class="btn btn-primary btn-block">Free Download</a>
-        </li>
-        <!-- <li class="header-title">Want more components?</li>
-            <li class="button-container">
-                <a href="https://www.creative-tim.com/product/material-dashboard-pro" target="_blank" class="btn btn-warning btn-block">
-                  Get the pro version
-                </a>
-            </li> -->
-        <li class="button-container">
-          <a href="https://demos.creative-tim.com/material-dashboard/docs/2.1/getting-started/introduction.html" target="_blank" class="btn btn-default btn-block">
-            View Documentation
-          </a>
-        </li>
-        <li class="button-container github-star">
-          <a class="github-button" href="https://github.com/creativetimofficial/material-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-        </li>
-        <li class="header-title">Thank you for 95 shares!</li>
-        <li class="button-container text-center">
-          <button id="twitter" class="btn btn-round btn-twitter"><i class="fa fa-twitter"></i> &middot; 45</button>
-          <button id="facebook" class="btn btn-round btn-facebook"><i class="fa fa-facebook-f"></i> &middot; 50</button>
-          <br>
-          <br>
-        </li>
-      </ul>
-    </div>
-  </div>
+
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
@@ -774,6 +682,65 @@
       });
     });
   </script>
+  <script>
+
+      var texto='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.';
+      
+      menos = texto.slice(0,80);
+      mas= texto.slice(81);
+
+      for(i=1; i<5; i++){
+        $('#mitexto'+i).html('<p>'+menos+'<span id="dots'+i+'">...</span><span id="more'+i+'">'+mas+'</span><span onclick="myFunction('+i+')" id="myBtn'+i+'">Read more</span></p>')
+        myFunction(i);
+       
+      }
+
+
+      //$('#mitexto').html(menos+'<span id="dots">'+mas+'</span><span onclick="myFunction()" id="myBtn"><b>&nbsp;Ver más</b></span></p>')
+      
+      function myFunction(i) {
+        console.log('llamada '+i);
+        var dots = document.getElementById("dots"+i);
+        var moreText = document.getElementById("more"+i);
+        var btnText = document.getElementById("myBtn"+i);
+      
+        if (dots.style.display !== "none") {
+          dots.style.display = "none";
+          btnText.innerHTML = "<b>&nbsp;Ver más</b>"; 
+          moreText.style.display = "none";
+
+        } else {
+          dots.style.display = "inline";
+          btnText.innerHTML = "<b>&nbsp;Ver menos</b>"; 
+          moreText.style.display = "inline";
+        }
+      }
+ 
+      </script>
+        <!-- FUNCIÓN CALENDARIO -->
+    <script src="../assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+       
+    moment.locale('en', {
+        week: { dow: 1 } // Monday is the first day of the week
+    });
+          $('#datetimepicker5').datetimepicker({
+              defaultDate: new Date(),
+              disabledDates: [
+                  moment("11/10/2018"),
+                  new Date(31, 12 - 1, 2019),
+              ],
+              format:"DD-MM-YYYY"
+          });
+      });
+  </script>
+          <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+<!-- FIN FUNCIÓN CALENDARIO -->
 </body>
 
 </html>

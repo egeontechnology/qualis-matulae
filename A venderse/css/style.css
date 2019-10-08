@@ -246,8 +246,8 @@ fieldset[disabled] .btn-rect--primary.active {
 }
 .btn-rect--default {
   color: white;
-  background-color: #2B8BE3;
-  border-color: #2B8BE3;
+  background-color: #eab823;
+  border-color: #eab823;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -285,11 +285,11 @@ fieldset[disabled] .btn-rect--default:active,
 .btn-rect--default.disabled.active,
 .btn-rect--default[disabled].active,
 fieldset[disabled] .btn-rect--default.active {
-  background-color: #2B8BE3;
-  border-color: #2B8BE3;
+  background-color: #eab823;
+  border-color: #eab823;
 }
 .btn-rect--default .badge {
-  color: #2B8BE3;
+  color: #eab823;
   background-color: white;
 }
 .btn-rect--default:hover {
@@ -457,7 +457,7 @@ body {
   border: none;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: #663FB5;
+  color: #844d04;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -507,7 +507,7 @@ body {
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #663FB5 !important;
+  color: #844d04 !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -640,14 +640,14 @@ header.general__image-gradient {
   color: white;
 }
 header.general__image-gradient .header-mask {
-  background: #663FB5;
-  background: -webkit-linear-gradient(left bottom, #663FB5, #2B8BE3);
+  background: #844d04;
+  background: -webkit-linear-gradient(left bottom, #844d04, #eab823);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom top, #663FB5, #2B8BE3);
+  background: -o-linear-gradient(bottom top, #844d04, #eab823);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom top, #663FB5, #2B8BE3);
+  background: -moz-linear-gradient(bottom top, #844d04, #eab823);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom top, #663FB5, #2B8BE3);
+  background: linear-gradient(to bottom top, #844d04, #eab823);
   opacity: 0.8;
   width: 100%;
   height: 100%;
@@ -711,10 +711,10 @@ header.mobile-on-right {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url('../img/bg-pattern.png'), #663FB5;
-  background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, #663FB5, #2B8BE3);
+  background: url('../img/bg-pattern.png'), #844d04;
+  background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, #844d04, #eab823);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: url('../img/bg-pattern.png'), linear-gradient(to left, #663FB5, #2B8BE3);
+  background: url('../img/bg-pattern.png'), linear-gradient(to left, #844d04, #eab823);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
@@ -781,15 +781,16 @@ header.mobile-on-right .device-container .screen img {
     font-size: 50px;
   }
 }
+/* Aquí se modifica el background del sobre nosotros */
 header.mobile-on-right-small {
   position: relative;
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url('../img/bg-pattern.png'), #663FB5;
-  background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, #663FB5, #2B8BE3);
+  background: url('../img/bg-pattern.png'), #844d04;
+  background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, #844d04, #eab823);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: url('../img/bg-pattern.png'), linear-gradient(to left, #663FB5, #2B8BE3);
+  background: url('../img/bg-pattern.png'), linear-gradient(to left, #844d04, #eab823);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
@@ -857,10 +858,10 @@ header.devices-on-right {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url('../img/bg-pattern.png'), #663FB5;
-  background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, #663FB5, #2B8BE3);
+  background: url('../img/bg-pattern.png'), #844d04;
+  background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, #844d04, #eab823);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: url('../img/bg-pattern.png'), linear-gradient(to left, #663FB5, #2B8BE3);
+  background: url('../img/bg-pattern.png'), linear-gradient(to left, #844d04, #eab823);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
@@ -939,10 +940,10 @@ header.bottom-laptop {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url('../img/bg-pattern.png'), #663FB5;
-  background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, #663FB5, #2B8BE3);
+  background: url('../img/bg-pattern.png'), #844d04;
+  background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, #844d04, #eab823);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: url('../img/bg-pattern.png'), linear-gradient(to left, #663FB5, #2B8BE3);
+  background: url('../img/bg-pattern.png'), linear-gradient(to left, #844d04, #eab823);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   height: 90vh;
@@ -978,10 +979,10 @@ header.video-on-right {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url('../img/bg-pattern.png'), #663FB5;
-  background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, #663FB5, #2B8BE3);
+  background: url('../img/bg-pattern.png'), #844d04;
+  background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, #844d04, #eab823);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: url('../img/bg-pattern.png'), linear-gradient(to left, #663FB5, #2B8BE3);
+  background: url('../img/bg-pattern.png'), linear-gradient(to left, #844d04, #eab823);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
@@ -1227,7 +1228,7 @@ section .section-image-container .section-image {
   font-size: 32px;
 }
 .functionality .media .media-left span .fa {
-  color: #2B8BE3;
+  color: #eab823;
 }
 .functionality .media .media-body h4 {
   margin: 0 0 6px;
@@ -1250,14 +1251,14 @@ section .section-image-container .section-image {
   position: absolute;
 }
 .testimonials--default .gradient-cover {
-  background: #663FB5;
-  background: -webkit-linear-gradient(left bottom, #663FB5, #2B8BE3);
+  background: #844d04;
+  background: -webkit-linear-gradient(left bottom, #844d04, #eab823);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom top, #663FB5, #2B8BE3);
+  background: -o-linear-gradient(bottom top, #844d04, #eab823);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom top, #663FB5, #2B8BE3);
+  background: -moz-linear-gradient(bottom top, #844d04, #eab823);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom top, #663FB5, #2B8BE3);
+  background: linear-gradient(to bottom top, #844d04, #eab823);
   opacity: 0.8;
   width: 100%;
   height: 100%;
@@ -1934,7 +1935,7 @@ section.faqs .faq p {
   border: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-color: #663FB5;
+  background-color: #844d04;
   color: white;
 }
 .newsletter-form .input-group-addon button:focus,
@@ -1976,7 +1977,7 @@ section.faqs .faq p {
 }
 .contact-with-map .form-control:focus {
   box-shadow: none;
-  border-color: #663FB5;
+  border-color: #844d04;
 }
 .contact-with-map .form-control-feedback {
   line-height: 50px;
@@ -2020,7 +2021,7 @@ section.faqs .faq p {
 }
 .contact-default .form-control:focus {
   box-shadow: none;
-  border-color: #663FB5;
+  border-color: #844d04;
 }
 .contact-default .form-control-feedback {
   line-height: 50px;
@@ -2058,10 +2059,10 @@ section.faqs .faq p {
   margin-top: 20px;
 }
 .splash--default {
-  background-color: #2B8BE3;
+  background-color: #eab823;
 }
 .splash--primary {
-  background-color: #663FB5;
+  background-color: #844d04;
 }
 .splash--gray {
   background-color: #424753;
