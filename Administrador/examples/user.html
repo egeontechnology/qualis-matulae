@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="../assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
-  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link href="../../css/bootstrap.min.css" rel="stylesheet" /> -->
   
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
@@ -41,7 +41,7 @@
  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
  <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
- <script src="jquery.ui.datepicker-es.js"></script>
+ <!-- <script src="jquery.ui.datepicker-es.js"></script> -->
 </head>
 <!-- FIN CALENDARIO -->
 <!--LO QUE CREÍA QUE ERA NECESARIO PARA AÑADIR EL BOTÓN DE SUBIR IMAGEN-->
@@ -258,12 +258,18 @@
                     <div class="col-md-6">
                         <div class="form-group">
                           <strong>Sube tu foto de perfil</strong><br>
-                          <form> <!-- action="/action_page.php">-->
-                            <input type="file" name="imagen" accept="image/*"  class="btn btn-primary pull-right">
-                          </form>
-                          <p><strong><br>Nota:</strong> Las imágenes no pueden pesar más de 2gb</p>
+                          <!-- <form>
+                            <input type="file" name="imagen" accept="image/*"  class="btn btn-primary">
+                          </form> -->
+                          <form>
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                              </div>
+                            </form>
+                          <!-- <p><strong><br>Nota:</strong> Las imágenes no pueden pesar más de 2gb</p> -->
                         </div>
-                      </div>
+                    </div>
                    <!-- FIN AÑADIR FOTO DE PERFIL -->
                     <button type="submit" class="btn btn-primary pull-right">Editar datos</button>
                     <div class="clearfix"></div>
@@ -372,13 +378,13 @@
         <li class="button-container">
           <a href="https://www.creative-tim.com/product/material-dashboard" target="_blank" class="btn btn-primary btn-block">Free Download</a>
         </li>
-        <!-- <li class="header-title">Want more components?</li>
+         <li class="header-title">Want more components?</li>
             <li class="button-container">
                 <a href="https://www.creative-tim.com/product/material-dashboard-pro" target="_blank" class="btn btn-warning btn-block">
                   Get the pro version
                 </a>
-            </li> -->
-        <!-- <li class="button-container">
+            </li>
+         <li class="button-container">
           <a href="https://demos.creative-tim.com/material-dashboard/docs/2.1/getting-started/introduction.html" target="_blank" class="btn btn-default btn-block">
             View Documentation
           </a>
@@ -395,7 +401,7 @@
         </li>
       </ul>
     </div>
-  </div> --> -->
+  </div> -->
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
@@ -610,6 +616,13 @@
       });
     });
   </script>
+  <script>
+      // Add the following code if you want the name of the file appear on select
+      $(".custom-file-input").on("change", function() {
+        var fileName = $(this).val().split("\\").pop();
+        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+      });
+      </script>
     <!-- FUNCIÓN CALENDARIO -->
     <script src="../assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript">
