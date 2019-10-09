@@ -821,30 +821,82 @@
       </div>
     </section>
   <!--//END BOOKING DETAILS -->
-  <!--============================= FOOTER =============================-->
-    <footer class="main-block dark-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4" style="padding-bottom: 5%">
-                        <a href="Privacy Policy.html" style="text-decoration: none" >Política de privacidad</a><br>
-                        <a href="A venderse/index-mobile-on-right-small.html" style="text-decoration: none">Sobre Nosotros</a>
-                    </div>
-                
-                    <div class="row copyright col-md-4" style="margin: 0px 0px 0px 0px; display:inline; padding-bottom: 5%">
-                        <ul style="margin-top: 10px">
-                        <li><a href="https://instagram.com/ipeepeewc/" target="_blank"><span class="ti-instagram"></span></a></li>
-                        <li><a href="https://twitter.com/ipeepeewc/" target="_blank"><span class="ti-twitter-alt"></span></a></li>
-                        <li><a href="#"><span class="ti-email"></span></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 copyright align-items-center">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p style="font-size: 14px">Copyright &copy; 2018 Listing. <br>
-                        All rights reserved | This template is made by <a href="https://colorlib.com" target="_blank" style="text-decoration: none">Colorlib</a></p>
-                    </div>
-                </div>
+ <!--============================= FOOTER =============================-->
+ <footer class="main-block dark-bg">
+    <a id="footer1"></a>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4" style="padding-bottom: 5%">
+                  <a href="Privacy Policy.html" style="text-decoration: none">Política de privacidad</a><br>
+                  <a href="A venderse/index-mobile-on-right-small.html" style="text-decoration: none">Sobre Nosotros</a>
+              </div>
+              <div class="row copyright col-md-4" style="margin: 0px 0px 0px 0px; display:inline; padding-bottom: 5%">
+                <ul style="margin-top: 10px">
+                <li><a href="https://instagram.com/ipeepeewc/" target="_blank"><span class="ti-instagram"></span></a></li>
+                <li><a href="https://twitter.com/ipeepeewc/" target="_blank"><span class="ti-twitter-alt"></span></a></li>
+                <li><a href="#footer1" onclick="document.getElementById('modal-wrapper-2').style.display='block'"><span class="ti-email"></span></a></li>
+                <!-- <li><span onclick="document.getElementById('modal-wrapper-2').style.display='block'"class="ti-email"style="color: #ccc; -->
+                  <!-- font-size: 22px;"></span></li> -->
+                </ul>
+              </div>
+                <!-- El popup del email (que es un mix del popup de registro y el desplegable de mail)-->
+              <div id="modal-wrapper-2" class="modal" >
+                <form class="modal-content animate ">
+                  <!-- contenido dentro del popup-->
+                  <div style="padding: 20px" id="form-olvidado">
+                    <form accept-charset="UTF-8" role="form" name="login-form" id="login-form" method="post">
+                      <fieldset>
+                        <div class="imgcontainer">
+                          <span onclick="document.getElementById('modal-wrapper-2').style.display='none'" class="close" title="Close PopUp" style="font-size: 40px">&times;</span>
+                          <h4 style="text-align:center">Contacta con nosotr@s</h4>
+                        </div>
+                        <form role="form" id="contact-form" class="contact-form">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Nombre">
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="form-group">
+                                  <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Mensaje"></textarea>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <button type="submit" class="btn btn-rect btn-rect--default pull-right" style=background-color:#eab924;color:white>Enviar Mensaje</button>
+                              </div>
+                            </div>
+                          </form>
+                      </fieldset>
+                    </form>
+                  </div>
+                  </form>
+                <!-- Fin del popup del email -->
+              <!-- <div class="row copyright col-md-4" style="margin: 0px 0px 0px 0px; display:inline; padding-bottom: 5%">
+                  <ul style="margin-top: 10px">
+                  <li><a href="https://instagram.com/ipeepeewc/" target="_blank"><span class="ti-instagram"></span></a></li>
+                  <li><a href="https://twitter.com/ipeepeewc/" target="_blank"><span class="ti-twitter-alt"></span></a></li>
+                  <li><a href="#"><span class="ti-email"></span></a></li>
+                  </ul>
+              </div> -->
             </div>
-        </footer>
+            <div class="col-md-4 copyright align-items-center">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <p style="font-size: 14px">Copyright &copy; 2018 Listing. <br>
+                All rights reserved | This template is made by <a href="https://colorlib.com" target="_blank" style="text-decoration: none">Colorlib</a></p>
+            </div>
+        </div>
+      </div>
+  </footer>
   <!--//END FOOTER -->
 
 
