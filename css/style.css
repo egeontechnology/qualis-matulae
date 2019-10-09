@@ -1078,6 +1078,15 @@ bottom: 1rem;
 right: 1rem;
 z-index: 999;
 }
+.app-fab--absolute2 {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 999;
+  background-color:rgba(0,0,0,0);;
+  color: black;
+  box-shadow: none;
+  }
 
 @media(min-width: 1024px) {
     .app-fab--absolute {
